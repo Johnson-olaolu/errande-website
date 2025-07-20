@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-black">
       <div className="flex flex-col lg:flex-row pb-24 px-8 lg:px-28 pt-24 lg:pt-32 gap-20">
         <div className="shrink-0 text-white w-60 max-w-full">
-          <Image height={33} width={137} src={"/images/Logo-white.png"} alt="Logo" className="mb-8" />
+          <Image height={33} width={137} src={"/images/Logo-red.png"} alt="Logo" className="mb-8" />
           <ul className="flex flex-col space-y-2 mb-8">
             <li>
               <p className=" text-[#CCCCCC] font-futura-pt text-xs">A108 Adam Street New York, NY 535022 United States</p>
