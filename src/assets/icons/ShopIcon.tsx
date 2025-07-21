@@ -1,9 +1,15 @@
-import React from "react";
+import React from 'react';
 
-interface ShopIconProps extends React.SVGProps<SVGSVGElement> {}
-const ShopIcon = (props: ShopIconProps) => {
+const ShopIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
-    <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      width="61"
+      height="60"
+      viewBox="0 0 61 60"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
       <path
         d="M7.74219 28.0645L7.74219 39.2651C7.74219 50.4657 12.2324 54.9559 23.433 54.9559H36.8787C48.0794 54.9559 52.5696 50.4657 52.5696 39.2651V28.0645"
         stroke="currentColor"
