@@ -65,7 +65,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative w-screen overflow-hidden">
+    <div className="relative w-screen overflow-hidden bg-white">
       <motion.div className="flex " animate={controls} style={{ width: `${sections.length * 100}vw` }}>
         {sections.map((section, index) => (
           <motion.div key={index} className={`w-screen `} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>

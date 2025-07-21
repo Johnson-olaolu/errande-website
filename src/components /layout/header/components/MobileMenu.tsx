@@ -11,7 +11,6 @@ interface MobileMenuProps {
 }
 const MobileMenu: React.FC<MobileMenuProps> = (props) => {
   const { showMobileMenu, setShowMobileMenu } = props;
-  // const [showDropDown, setShowDropDown] = useState(false);
   return (
     <AnimatePresence>
       {showMobileMenu && (

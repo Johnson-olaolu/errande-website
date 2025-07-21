@@ -6,7 +6,7 @@ interface VendorPageProps {
 }
 const VendorPage: React.FC<VendorPageProps> = ({ nextSection }) => {
   return (
-    <main className="bg-white">
+    <main className="">
       <Jumbotron nextSection={nextSection} />
     </main>
   );

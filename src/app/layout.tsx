@@ -38,28 +38,23 @@ const antipastoProFont = localFont({
       style: "normal",
     },
     {
-      path: "../assets/fonts/AntipastoPro/AntipastoPro-Light.ttf",
+      path: "../assets/fonts/AntipastoPro/AntipastoPro-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../assets/fonts/AntipastoPro/AntipastoPro-Medium.ttf",
+      path: "../assets/fonts/AntipastoPro/AntipastoPro-DemiBold.ttf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../assets/fonts/AntipastoPro/AntipastoPro-DemiBold.ttf",
+      path: "../assets/fonts/AntipastoPro/AntipastoPro-Bold.ttf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../assets/fonts/AntipastoPro/AntipastoPro-Bold.ttf",
-      weight: "800",
-      style: "normal",
-    },
-    {
       path: "../assets/fonts/AntipastoPro/AntipastoPro-ExtraBold.ttf",
-      weight: "900",
+      weight: "800",
       style: "normal",
     },
   ],
