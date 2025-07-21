@@ -1,11 +1,10 @@
 import React from "react";
 import Jumbotron from "./components/Jumbotron";
 
-interface CustomerPageProps {
+interface VendorPageProps {
   nextSection: () => void;
 }
-const CustomerPage = (props: CustomerPageProps) => {
-  const { nextSection } = props;
+const VendorPage: React.FC<VendorPageProps> = ({ nextSection }) => {
   return (
     <main className="bg-white">
       <Jumbotron nextSection={nextSection} />
@@ -13,4 +12,4 @@ const CustomerPage = (props: CustomerPageProps) => {
   );
 };
 
-export default CustomerPage;
+export default VendorPage;

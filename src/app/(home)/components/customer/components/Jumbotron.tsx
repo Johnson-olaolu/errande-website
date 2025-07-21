@@ -4,7 +4,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { FaChevronRight } from "react-icons/fa6";
 
-const Jumbotron = () => {
+interface JumbotronProps {
+  nextSection: () => void;
+}
+const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
   return (
     <div className="">
       <div className=" pb-[200px] overflow-x-hidden">
@@ -80,8 +83,8 @@ const Jumbotron = () => {
         </div>
       </div>
       <div className=" flex items-center justify-center mt-16 gap-3">
-        <div className="px-8 py-5 bg-erande-blue rounded-full text-white font-antipasto-pro text-2xl">Customers</div>
-        <button className="p-5 border-2 border-erande-blue rounded-full ">
+        <div className="px-5 lg:px-8 py-3 lg:py-5 bg-erande-blue rounded-full text-white font-antipasto-pro text-base lg:text-2xl">Customers</div>
+        <button onClick={() => nextSection()} className="p-3 lg:p-5 border-2 border-erande-blue rounded-full cursor-pointer ">
           <FaChevronRight size={16} className=" text-erande-blue" />
         </button>
       </div>
