@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
       {/* Desktop Header */}
-      <header className="hidden lg:block px-24 py-4 bg-blue-400">
+      <header className="hidden lg:block px-24 py-4 -mb-24 relative z-10">
         <div className="flex items-center justify-between">
           <Image src="/images/Logo-red.png" alt="Logo" width={122} height={27} className="h-8 w-auto" />
           <div className="flex items-center gap-16">
@@ -100,7 +100,7 @@ const Header = () => {
         </div>
       </header>
       {/* Mobile Header */}
-      <header className="lg:hidden py-3.5 bg-blue-400">
+      <header className="lg:hidden py-3.5 -mb-24 relative z-10">
         <div className=" flex justify-between px-5">
           <div className="">
             <Image src="/images/Logo-red-mobile.png" alt="Logo" width={41} height={37} className="" />

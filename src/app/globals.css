@@ -13,6 +13,9 @@
   --font-brigands-expanded: var(--font-brigands-expanded);
   --font-futura-pt: var(--font-futura-pt);
   --font-antipasto-pro: var(--font-antipasto-pro);
+  --color-erande-blue: #173660;
+  --color-erande-red: #E03826;
+  --color-erande-black: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,4 +34,19 @@ body {
 
 .bg-opacity-15 {
   background-color: rgba(255, 255, 255, 0.15);
+}
+.text-opacity-15 {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.bg-erande-darkblue {
+  background: linear-gradient(180deg, #0C1B30 23.94%, #173660 100%);
+}
+
+.bg-erande-red {
+  background: linear-gradient(180deg, #C82C1B 23.94%, #E03826 100%);
+}
+
+.bg-erande-black {
+  background: linear-gradient(180deg, #222222 23.94%, #000000 100%);
 }
