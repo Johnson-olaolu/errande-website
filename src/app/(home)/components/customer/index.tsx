@@ -4,6 +4,7 @@ import Services from "./components/Services";
 import Locations from "./components/Locations";
 import Steps from "./components/steps";
 import Benefits from "./components/Benefits";
+import FAQ from "./components/FAQ";
 
 interface CustomerPageProps {
   nextSection: () => void;
@@ -17,6 +18,7 @@ const CustomerPage = (props: CustomerPageProps) => {
       <Locations />
       <Steps />
       <Benefits />
+      <FAQ />
     </main>
   );
 };

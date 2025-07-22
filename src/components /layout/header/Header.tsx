@@ -109,7 +109,7 @@ const Header = () => {
                         <a
                           href="#customer"
                           className={`${
-                            hash === "customer" ? "border-white" : "border-transparent"
+                            hash === "customer" || !hash ? "border-white" : "border-transparent"
                           } px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border hover:border-white bg-opacity-15 block text-center`}
                         >
                           Customer
