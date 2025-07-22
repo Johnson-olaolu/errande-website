@@ -8,7 +8,7 @@ const Locations = () => {
       <div className="bg-erande-blue mt-20 lg:mt-60 pt-40 px-8 lg:px-28 pb-[332px] lg:pb-[500px] relative">
         <div className="">
           <div className=" text-left text-white max-w-[900px] w-full">
-            <h2 className=" font-antipasto-pro text-xl lg:text-4xl mb-2 font-bold capitalize">Rest assured, we've got you</h2>
+            <h2 className=" font-antipasto-pro text-xl lg:text-5xl mb-2 font-bold capitalize">Rest assured, we&apos;ve got you</h2>
             <p className=" font-futura-pt text-sm lg:text-xl">
               Erande gives you the most efficient service that no one has ever seen. We have compiled information and analysis that helps us better
               the services we render.

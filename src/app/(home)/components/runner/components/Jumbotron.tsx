@@ -38,7 +38,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
           <div className=" absolute top-[300px] left-1/2 transform -translate-x-1/2 z-[0]">
             <p className="uppercase font-brigands-expanded text-[108px] lg:text-[280px] text-opacity-15">ERANDE</p>
           </div>
-          <div className="h-[442px] lg:h-[690px] w-[442px] lg:w-[690px] rounded-full bg-erande-red absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[180px] lg:translate-y-[200px] z-[1]">
+          <div className="h-[442px] lg:h-[690px] w-[442px] lg:w-[690px] rounded-full bg-erande-red-jumbotron absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[180px] lg:translate-y-[200px] z-[1]">
             <Image
               src="/images/rider.png"
               alt="rider"

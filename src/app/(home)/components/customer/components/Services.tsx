@@ -8,7 +8,7 @@ const Services = () => {
     <section className="py-8 px-8 lg:px-28 ">
       <div className="">
         <div className=" text-center text-erande-blue max-w-[900px] mx-auto w-full">
-          <h2 className=" font-antipasto-pro text-xl lg:text-4xl mb-2 font-bold capitalize">Rest assured, we've got you</h2>
+          <h2 className=" font-antipasto-pro text-xl lg:text-4xl mb-2 font-bold capitalize">Rest assured, we&apos;ve got you</h2>
           <p className=" font-futura-pt text-sm lg:text-xl">
             Erande gives you the most efficient service that no one has ever seen. We have compiled information and analysis that helps us better the
             services we render.

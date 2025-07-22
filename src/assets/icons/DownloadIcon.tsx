@@ -1,7 +1,7 @@
 import React from "react";
 
-interface DownloadIconProps extends React.SVGProps<SVGSVGElement> {}
-const DownloadIcon: React.FC<DownloadIconProps> = (props) => {
+type DownloadIconProps = React.SVGProps<SVGSVGElement>;
+const DownloadIcon = (props: DownloadIconProps) => {
   return (
     <svg width="53" height="54" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <rect x="0.59281" y="1.03715" width="51.9259" height="51.9259" rx="25.963" stroke="currentColor" stroke-width="0.962963" />

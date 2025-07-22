@@ -2,6 +2,8 @@ import React from "react";
 import Jumbotron from "./components/Jumbotron";
 import Services from "./components/Services";
 import Locations from "./components/Locations";
+import Steps from "./components/steps";
+import Benefits from "./components/Benefits";
 
 interface CustomerPageProps {
   nextSection: () => void;
@@ -13,6 +15,8 @@ const CustomerPage = (props: CustomerPageProps) => {
       <Jumbotron nextSection={nextSection} />
       <Services />
       <Locations />
+      <Steps />
+      <Benefits />
     </main>
   );
 };

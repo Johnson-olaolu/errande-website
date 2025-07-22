@@ -1,6 +1,6 @@
 import React from "react";
 
-interface ShopIconProps extends React.SVGProps<SVGSVGElement> {}
+type ShopIconProps = React.SVGProps<SVGSVGElement>;
 const ShopIcon = (props: ShopIconProps) => {
   return (
     <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>

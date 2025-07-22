@@ -39,14 +39,14 @@ body {
   color: rgba(255, 255, 255, 0.15);
 }
 
-.bg-erande-darkblue {
+.bg-erande-darkblue-jumbotron {
   background: linear-gradient(180deg, #0C1B30 23.94%, #173660 100%);
 }
 
-.bg-erande-red {
+.bg-erande-red-jumbotron {
   background: linear-gradient(180deg, #C82C1B 23.94%, #E03826 100%);
 }
 
-.bg-erande-black {
+.bg-erande-black-jumbotron {
   background: linear-gradient(180deg, #222222 23.94%, #000000 100%);
 }
