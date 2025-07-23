@@ -8,6 +8,7 @@ import MobileMenu from "./components/MobileMenu";
 import Link from "next/link";
 import { routes } from "@/app/routes";
 import { usePathname } from "next/navigation";
+import { p } from "motion/react-client";
 
 const Header = () => {
   const pathname = usePathname();
@@ -51,7 +52,7 @@ const Header = () => {
   }, [pathname]);
   return (
     <>
-      <header className={"hidden lg:block px-24 py-4  relative z-10" + (variant !== "blue" ? " -mb-24" : " bg-white")}>
+      <header className={"hidden lg:block px-24 py-4 relative z-10 " + (variant !== "blue" ? " -mb-24 bg-transparent" : " bg-white")}>
         <div className="flex items-center justify-between">
           <Image
             src={variant === "white" ? "/images/Logo-white.png" : variant === "blue" ? "/images/Logo-blue.png" : "/images/Logo-red.png"}
@@ -66,7 +67,13 @@ const Header = () => {
                 <li className="">
                   <Link
                     href={routes.COMPANY}
-                    className=" px-4 py-1.5 rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                    className={
+                      variant !== "blue"
+                        ? "px-4 py-1.5 rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                        : `px-4 py-1.5 rounded-full text-erande-blue border border-transparent bg-offwhite-opacity-15 font-futura-pt text-sm hover:!bg-erande-blue  hover:text-white ${
+                            pathname === routes.COMPANY ? "!bg-erande-blue !text-white" : ""
+                          }`
+                    }
                   >
                     Company
                   </Link>
@@ -74,7 +81,13 @@ const Header = () => {
                 <li className="">
                   <Link
                     href={routes.SERVICES}
-                    className=" px-4 py-1.5 rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                    className={
+                      variant !== "blue"
+                        ? "px-4 py-1.5 rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                        : `px-4 py-1.5 rounded-full text-erande-blue border border-transparent bg-offwhite-opacity-15 font-futura-pt text-sm hover:!bg-erande-blue  hover:text-white ${
+                            pathname === routes.SERVICES ? "!bg-erande-blue !text-white" : ""
+                          }`
+                    }
                   >
                     Services
                   </Link>
@@ -82,7 +95,13 @@ const Header = () => {
                 <li className="">
                   <Link
                     href={routes.EXPLORE}
-                    className=" px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                    className={
+                      variant !== "blue"
+                        ? "px-4 py-1.5 rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                        : `px-4 py-1.5 rounded-full text-erande-blue border border-transparent bg-offwhite-opacity-15 font-futura-pt text-sm hover:!bg-erande-blue  hover:text-white ${
+                            pathname === routes.EXPLORE ? "!bg-erande-blue !text-white" : ""
+                          }`
+                    }
                   >
                     Explore
                   </Link>
@@ -90,7 +109,13 @@ const Header = () => {
                 <li className="">
                   <Link
                     href={routes.LEGAL}
-                    className=" px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                    className={
+                      variant !== "blue"
+                        ? "px-4 py-1.5 rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                        : `px-4 py-1.5 rounded-full text-erande-blue border border-transparent bg-offwhite-opacity-15 font-futura-pt text-sm hover:!bg-erande-blue  hover:text-white ${
+                            pathname === routes.LEGAL ? "!bg-erande-blue !text-white" : ""
+                          }`
+                    }
                   >
                     Legal
                   </Link>
@@ -98,7 +123,13 @@ const Header = () => {
                 <li className="">
                   <Link
                     href={routes.CONTACT}
-                    className=" px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                    className={
+                      variant !== "blue"
+                        ? "px-4 py-1.5 rounded-full text-white font-futura-pt text-sm border border-transparent hover:border-white bg-opacity-15"
+                        : `px-4 py-1.5 rounded-full text-erande-blue border border-transparent bg-offwhite-opacity-15 font-futura-pt text-sm hover:!bg-erande-blue  hover:text-white ${
+                            pathname === routes.CONTACT ? "!bg-erande-blue !text-white" : ""
+                          }`
+                    }
                   >
                     Contact
                   </Link>
@@ -107,20 +138,30 @@ const Header = () => {
                   <div className=" relative z-[3]">
                     <Link
                       href=""
-                      className=" px-4 py-1.5 rounded-full text-white font-futura-pt text-sm border  border-white bg-transparent cursor-pointer"
+                      className={
+                        variant !== "blue"
+                          ? " px-4 py-1.5 rounded-full text-white font-futura-pt text-sm border  border-white bg-transparent cursor-pointer"
+                          : " px-4 py-1.5 rounded-full text-erande-blue font-futura-pt text-sm border  border-erande-blue bg-transparent cursor-pointer"
+                      }
                     >
                       {hash === "runner" ? "Runner" : hash === "vendor" ? "Vendor" : "Customer"}
                     </Link>
-                    <FaChevronDown size={16} className="inline ml-2 text-white" />
+                    <FaChevronDown size={16} className={variant !== "blue" ? "inline ml-2 text-white" : "inline ml-2 text-erande-blue"} />
                   </div>
                   <div className=" absolute top-0 left-0 pt-14 w-full group-hover:block hidden z-[2]">
                     <ul className=" flex flex-col gap-2">
                       <li className="">
                         <a
                           href={routes.CUSTOMER}
-                          className={`${
-                            hash === "customer" || !hash ? "border-white" : "border-transparent"
-                          } px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border hover:border-white bg-opacity-15 block text-center`}
+                          className={
+                            variant !== "blue"
+                              ? `px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border hover:border-white bg-opacity-15 block text-center ${
+                                  hash === "customer" || !hash ? "border-white" : "border-transparent"
+                                }`
+                              : `px-4 py-1.5  rounded-full text-erande-blue font-futura-pt text-sm border hover:border-erande-blue block text-center ${
+                                  hash === "customer" || !hash ? "!bg-erande-blue !text-white border border-erande-blue" : "bg-transparent"
+                                }`
+                          }
                         >
                           Customer
                         </a>
@@ -128,9 +169,17 @@ const Header = () => {
                       <li className="">
                         <a
                           href={routes.RUNNER}
-                          className={`${
-                            hash === "runner" ? "border-white" : "border-transparent"
-                          } px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border hover:border-white bg-opacity-15 block text-center`}
+                          className={
+                            variant !== "blue"
+                              ? `px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border hover:border-white bg-opacity-15 block text-center ${
+                                  hash === "runner" ? "border-white" : "border-transparent"
+                                }`
+                              : `px-4 py-1.5  rounded-full text-erande-blue font-futura-pt text-sm border hover:border-erande-blue block text-center ${
+                                  hash === "runner"
+                                    ? "!bg-erande-blue !text-white border border-erande-blue"
+                                    : "bg-transparent hover:bg-erande-blue hover:!text-white"
+                                }`
+                          }
                         >
                           Runner
                         </a>
@@ -138,9 +187,17 @@ const Header = () => {
                       <li className="">
                         <a
                           href={routes.VENDOR}
-                          className={`${
-                            hash === "vendor" ? "border-white" : "border-transparent"
-                          } px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border hover:border-white bg-opacity-15 block text-center`}
+                          className={
+                            variant !== "blue"
+                              ? `px-4 py-1.5  rounded-full text-white font-futura-pt text-sm border hover:border-white bg-opacity-15 block text-center ${
+                                  hash === "vendor" ? "border-white" : "border-transparent"
+                                }`
+                              : `px-4 py-1.5  rounded-full text-erande-blue font-futura-pt text-sm border hover:border-erande-blue block text-center ${
+                                  hash === "vendor"
+                                    ? "!bg-erande-blue !text-white border border-erande-blue"
+                                    : "bg-transparent hover:bg-erande-blue hover:!text-white"
+                                }`
+                          }
                         >
                           Vendor
                         </a>
@@ -150,12 +207,12 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <DownloadIcon className="h-14 w-14 text-white" />
+            <DownloadIcon className={variant !== "blue" ? "h-14 w-14 text-white" : "h-14 w-14 text-erande-blue"} />
           </div>
         </div>
       </header>
       {/* Mobile Header */}
-      <header className="lg:hidden py-3.5 -mb-24 relative z-10">
+      <header className={variant !== "blue" ? "lg:hidden py-3.5 -mb-24 relative z-10" : "lg:hidden bg-white mb-0 py-3.5 relative z-10"}>
         <div className=" flex justify-between px-5">
           <div className="">
             <Image
@@ -167,8 +224,11 @@ const Header = () => {
             />
           </div>
           <div className="flex gap-4 items-center">
-            <MenuIcon onClick={() => setShowMobileMenu(true)} className="h-10 w-10 text-white" />
-            <DownloadIcon className="h-10 w-10 text-white" />
+            <MenuIcon
+              onClick={() => setShowMobileMenu(true)}
+              className={variant !== "blue" ? "h-10 w-10 text-white" : "h-10 w-10 text-erande-blue"}
+            />
+            <DownloadIcon className={variant !== "blue" ? "h-10 w-10 text-white" : "h-10 w-10 text-erande-blue"} />
           </div>
         </div>
       </header>
