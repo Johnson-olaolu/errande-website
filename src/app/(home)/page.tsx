@@ -1,13 +1,16 @@
 "use client";
 
 import { motion, useAnimation } from "motion/react";
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef, use } from "react";
 import CustomerPage from "./components/customer";
 import RunnerPage from "./components/runner";
 import VendorPage from "./components/vendor";
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(0);
+  const containerRef1 = useRef<HTMLDivElement>(null);
+  const containerRef2 = useRef<HTMLDivElement>(null);
+  const containerRef3 = useRef<HTMLDivElement>(null);
   const controls = useAnimation();
 
   const nextSection = useCallback(() => {
@@ -73,11 +76,39 @@ export default function Home() {
     });
   }, [currentSection, controls]);
 
+  useEffect(() => {
+    console.log({
+      height1: containerRef1.current?.clientHeight,
+      height2: containerRef2.current?.clientHeight,
+      height3: containerRef3.current?.clientHeight,
+    });
+  }, [currentSection, controls]);
+
   return (
     <div className="relative w-screen overflow-hidden bg-white">
-      <motion.div className="flex items-start" animate={controls} style={{ width: `${sections.length * 100}vw` }}>
+      <motion.div
+        className="flex items-start"
+        animate={controls}
+        style={{
+          width: `${sections.length * 100}vw`,
+          height: `${
+            currentSection === 0
+              ? containerRef1.current?.clientHeight
+              : currentSection === 1
+              ? containerRef2.current?.clientHeight
+              : containerRef3.current?.clientHeight
+          }px`,
+        }}
+      >
         {sections.map((section, index) => (
-          <motion.div key={index} className={`w-screen `} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+          <motion.div
+            ref={index === 0 ? containerRef1 : index === 1 ? containerRef2 : containerRef3}
+            key={index}
+            className={`w-screen `}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             {section.component}
           </motion.div>
         ))}
