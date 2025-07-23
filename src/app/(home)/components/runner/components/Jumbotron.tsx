@@ -1,6 +1,6 @@
 import ShopIcon from "@/assets/icons/ShopIcon";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import { FaChevronRight } from "react-icons/fa6";
 

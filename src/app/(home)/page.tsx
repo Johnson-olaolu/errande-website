@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useAnimation } from "motion/react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import CustomerPage from "./components/customer";
 import RunnerPage from "./components/runner";
 import VendorPage from "./components/vendor";
@@ -10,10 +10,36 @@ export default function Home() {
   const [currentSection, setCurrentSection] = useState(0);
   const controls = useAnimation();
 
-  const getSectionFromHash = (hash: string) => {
-    const sectionIndex = sections.findIndex((section) => section.hash === hash);
-    return sectionIndex !== -1 ? sectionIndex : 0;
-  };
+  const nextSection = useCallback(() => {
+    if (currentSection < sections.length - 1) {
+      const newSection = currentSection + 1;
+      setCurrentSection(newSection);
+      window.location.hash = sections[newSection].hash;
+    } else {
+      window.location.hash = sections[0].hash; // Loop back to the first section
+      setCurrentSection(0);
+    }
+  }, [currentSection]);
+
+  const sections = useMemo(
+    () => [
+      {
+        component: <CustomerPage nextSection={nextSection} />,
+        hash: "customer",
+      },
+      { component: <RunnerPage nextSection={nextSection} />, hash: "runner" },
+      { component: <VendorPage nextSection={nextSection} />, hash: "vendor" },
+    ],
+    [nextSection]
+  );
+
+  const getSectionFromHash = useCallback(
+    (hash: string) => {
+      const sectionIndex = sections.findIndex((section) => section.hash === hash);
+      return sectionIndex !== -1 ? sectionIndex : 0;
+    },
+    [sections]
+  );
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -38,7 +64,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
     };
-  }, []);
+  }, [getSectionFromHash]);
 
   useEffect(() => {
     controls.start({
@@ -46,23 +72,6 @@ export default function Home() {
       transition: { duration: 0.8, ease: "easeInOut" },
     });
   }, [currentSection, controls]);
-
-  const nextSection = () => {
-    if (currentSection < sections.length - 1) {
-      const newSection = currentSection + 1;
-      setCurrentSection(newSection);
-      window.location.hash = sections[newSection].hash;
-    } else {
-      window.location.hash = sections[0].hash; // Loop back to the first section
-      setCurrentSection(0);
-    }
-  };
-
-  const sections = [
-    { component: <CustomerPage nextSection={nextSection} />, hash: "customer" },
-    { component: <RunnerPage nextSection={nextSection} />, hash: "runner" },
-    { component: <VendorPage nextSection={nextSection} />, hash: "vendor" },
-  ];
 
   return (
     <div className="relative w-screen overflow-hidden bg-white">

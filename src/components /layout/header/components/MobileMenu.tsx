@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "motion/react";
-import React, { useState } from "react";
+import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
