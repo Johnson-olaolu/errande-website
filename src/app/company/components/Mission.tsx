@@ -32,7 +32,7 @@ const Mission = () => {
             To empower people to live better by making everyday life easier, more efficient, and more peaceful.
           </p>
         </div>
-        <div className=" grow bg-[#E0E0E0] p-28 rounded-[40px] grid grid-cols-2 gap-16">
+        <div className=" grow bg-[#E0E0E0] p-28 rounded-l-[40px] grid grid-cols-2 gap-16">
           {missionInfoItems.map((item) => (
             <div className="" key={item.id}>
               <div className="">

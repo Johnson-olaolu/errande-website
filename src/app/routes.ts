@@ -6,6 +6,6 @@ export const routes = {
   COMPANY: "/company",
   SERVICES: "/services",
   EXPLORE: "/explore",
-  LEGAL: "/legal",
+  LEGAL: "/privacy-policy",
   CONTACT: "/contact-us",
 };

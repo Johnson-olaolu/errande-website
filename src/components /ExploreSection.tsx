@@ -60,7 +60,7 @@ const ExploreSection = (props: ExploreSectionProps) => {
         </p>
       </div>
       <div className="hidden lg:block mt-24">
-        <div className="flex justify-between items-center w-full">
+        <div className="flex justify-between items-center w-full gap-10">
           {exploreItems.map((item, index) => (
             <div key={index} className="relative">
               <Image src={item.image} alt="Explore Background" className="h-[860px] w-auto" width={410} height={860} />
