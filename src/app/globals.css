@@ -17,6 +17,7 @@
   --color-erande-red: #E03826;
   --color-erande-black: #000000;
   --color-erande-offwhite: #EBEBEB;
+  --color-erande-tetiary:#666666;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +39,10 @@ body {
 
 .bg-offwhite-opacity-15 {
   background-color: rgba(161, 161, 161, 0.15)
+}
+
+.bg-erande-blue-opacity-15 {
+  background-color: rgba(23, 54, 96, 0.15);
 }
 
 .text-opacity-15 {

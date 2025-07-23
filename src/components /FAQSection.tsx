@@ -1,3 +1,4 @@
+"use client";
 import { faqQuestionAnswers } from "@/utils/constants";
 import Image from "next/image";
 import React, { useState } from "react";
