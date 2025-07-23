@@ -66,7 +66,7 @@ const FAQSection = ({ variant = "blue" }: FAQSectionProps) => {
             </div>
           </div>
           <div className=" mt-16 lg:hidden overflow-x-auto custom-scrollbar-mobile pb-3">
-            <div className="border-white border p-2.5 rounded-lg ">
+            <div className="border-white border p-2.5 rounded-lg " style={{ width: "max-content" }}>
               <ul className=" flex items-center gap-4">
                 {faqQuestionAnswers.map((faq, index) => (
                   <li

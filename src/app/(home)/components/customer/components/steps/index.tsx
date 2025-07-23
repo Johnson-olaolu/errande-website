@@ -26,7 +26,6 @@ const Steps = () => {
 
   useEffect(() => {
     if (!containerRef.current) return;
-    console.log({ currentStep, containerWidth: containerRef.current.clientWidth });
     controls.start({
       x: -currentStep * containerRef.current.clientWidth,
       transition: { duration: 0.8, ease: "easeInOut" },
