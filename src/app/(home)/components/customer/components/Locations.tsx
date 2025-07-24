@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 
 const Locations = () => {
+  const locationItems = [{ name: "Lagos (Surulere)" }, { name: "Lagos (Yaba)" }];
   return (
     <section className="pb-56 lg:pb-96">
       <div className="bg-erande-blue mt-20 lg:mt-60 pt-40 px-8 lg:px-28 pb-[332px] lg:pb-[500px] relative">
@@ -16,9 +17,9 @@ const Locations = () => {
           </div>
           <div className="mt-20 rounded-2xl lg:rounded-3xl border border-white p-2.5 lg:p-5">
             <ul className=" space-y-4 lg:space-y-7">
-              {[...Array(7)].map((_, index) => (
+              {locationItems.map((location, index) => (
                 <li key={index} className=" p-4 lg:p-7 rounded-2xl border border-white flex items-center justify-between gap-4">
-                  <p className=" text-white font-futura-pt text-lg lg:text-3xl">Lagos (Igando)</p>
+                  <p className=" text-white font-futura-pt text-lg lg:text-3xl">{location.name}</p>
                   <WorldViewIcon className="h-6 lg:h-12" />
                 </li>
               ))}
