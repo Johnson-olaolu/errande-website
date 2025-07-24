@@ -3,13 +3,12 @@
 import DownloadIcon from "@/assets/icons/DownloadIcon";
 import MenuIcon from "@/assets/icons/MenuIcon";
 import Image from "next/image";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 import MobileMenu from "./components/MobileMenu";
 import Link from "next/link";
 import { routes } from "@/app/routes";
 import { usePathname } from "next/navigation";
-import { p } from "motion/react-client";
 
 const Header = () => {
   const pathname = usePathname();

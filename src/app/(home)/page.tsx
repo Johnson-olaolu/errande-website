@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useAnimation } from "motion/react";
-import { useState, useEffect, useCallback, useMemo, useRef, use } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import CustomerPage from "./components/customer";
 import RunnerPage from "./components/runner";
 import VendorPage from "./components/vendor";
