@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 import DownloadIcon from "@/assets/icons/DownloadIcon";
 import MenuIcon from "@/assets/icons/MenuIcon";
@@ -54,13 +55,15 @@ const Header = () => {
     <>
       <header className={"hidden lg:block px-24 py-4 relative z-10 " + (variant !== "blue" ? " -mb-24 bg-transparent" : " bg-white")}>
         <div className="flex items-center justify-between">
-          <Image
-            src={variant === "white" ? "/images/Logo-white.png" : variant === "blue" ? "/images/Logo-blue.png" : "/images/Logo-red.png"}
-            alt="Logo"
-            width={122}
-            height={27}
-            className="h-8 w-auto"
-          />
+          <a href="/" className="">
+            <Image
+              src={variant === "white" ? "/images/Logo-white.png" : variant === "blue" ? "/images/Logo-blue.png" : "/images/Logo-red.png"}
+              alt="Logo"
+              width={122}
+              height={27}
+              className="h-8 w-auto"
+            />
+          </a>
           <div className="flex items-center gap-16">
             <nav className="capitalize">
               <ul className="flex items-center space-x-8">
@@ -215,13 +218,15 @@ const Header = () => {
       <header className={variant !== "blue" ? "lg:hidden py-3.5 -mb-24 relative z-10" : "lg:hidden bg-white mb-0 py-3.5 relative z-10"}>
         <div className=" flex justify-between px-5">
           <div className="">
-            <Image
-              src={variant === "white" ? "/images/Logo-white-mobile.png" : "/images/Logo-red-mobile.png"}
-              alt="Logo"
-              width={41}
-              height={37}
-              className=""
-            />
+            <a href="/" className="">
+              <Image
+                src={variant === "white" ? "/images/Logo-white-mobile.png" : "/images/Logo-red-mobile.png"}
+                alt="Logo"
+                width={41}
+                height={37}
+                className=""
+              />
+            </a>
           </div>
           <div className="flex gap-4 items-center">
             <MenuIcon
