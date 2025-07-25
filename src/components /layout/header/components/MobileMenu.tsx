@@ -59,7 +59,10 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
                 </li>
                 <li className=" group">
                   <div className=" flex items-center justify-between p-4">
-                    <a href="#" className="text-white font-futura-pt text-lg opacity-50">
+                    <a
+                      href={props.hash === "customer" || !props.hash ? routes.CUSTOMER : props.hash === "runner" ? routes.RUNNER : routes.VENDOR}
+                      className="text-white font-futura-pt text-lg opacity-50"
+                    >
                       {props.hash === "customer" || !props.hash ? "Customer" : props.hash === "runner" ? "Runner" : "Vendor"}
                     </a>
                     <FaChevronDown size={16} className="inline ml-2 text-white" />
@@ -67,7 +70,7 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
                   <ul>
                     {props.hash !== "customer" && !!props.hash && (
                       <li className="p-4">
-                        <a href="#customer" onClick={() => setShowMobileMenu(false)} className="text-white font-futura-pt text-lg ">
+                        <a href={routes.CUSTOMER} onClick={() => setShowMobileMenu(false)} className="text-white font-futura-pt text-lg ">
                           Customer
                         </a>
                       </li>
@@ -75,14 +78,14 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
 
                     {props.hash !== "runner" && (
                       <li className="p-4">
-                        <a href="#runner" onClick={() => setShowMobileMenu(false)} className="text-white font-futura-pt text-lg ">
+                        <a href={routes.RUNNER} onClick={() => setShowMobileMenu(false)} className="text-white font-futura-pt text-lg ">
                           Runner
                         </a>
                       </li>
                     )}
                     {props.hash !== "vendor" && (
                       <li className="p-4">
-                        <a href="#vendor" onClick={() => setShowMobileMenu(false)} className="text-white font-futura-pt text-lg ">
+                        <a href={routes.VENDOR} onClick={() => setShowMobileMenu(false)} className="text-white font-futura-pt text-lg ">
                           Vendor
                         </a>
                       </li>
