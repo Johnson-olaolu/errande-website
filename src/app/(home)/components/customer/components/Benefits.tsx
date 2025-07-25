@@ -12,11 +12,11 @@ const Benefits = () => {
           services we render.
         </p>
       </div>
-      <div className=" h-[460px] lg:h-[970px] relative ">
+      <div className=" h-[460px] lg:h-[970px] relative w-full overflow-hidden  ">
         <div className=" absolute top-[68px] left-1/2 transform -translate-x-1/2 z-[0]">
           <p className="uppercase font-brigands-expanded text-[108px] lg:text-[280px] text-opacity-15">ERANDE</p>
         </div>
-        <div className="absolute top-1/2 transform -translate-y-1/2 w-full overflow-hidden ">
+        <div className="absolute top-1/2 transform -translate-y-1/2 w-full ">
           <motion.div
             className="flex"
             animate={{ x: ["-50%", "0%"] }}

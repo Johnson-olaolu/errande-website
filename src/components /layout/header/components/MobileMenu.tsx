@@ -1,4 +1,6 @@
+import { routes } from "@/app/routes";
 import { AnimatePresence, motion } from "motion/react";
+import Link from "next/link";
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IoIosCloseCircleOutline } from "react-icons/io";
@@ -31,29 +33,29 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
             <div className=" rounded-2xl border border-white px-2">
               <ul className="divide-white divide-y">
                 <li className=" p-4">
-                  <a href="#" className="text-white font-futura-pt text-lg">
+                  <Link href={routes.COMPANY} className="text-white font-futura-pt text-lg">
                     Company
-                  </a>
+                  </Link>
                 </li>
                 <li className=" p-4">
-                  <a href="#" className="text-white font-futura-pt text-lg">
+                  <Link href={routes.SERVICES} className="text-white font-futura-pt text-lg">
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li className=" p-4">
-                  <a href="#" className="text-white font-futura-pt text-lg">
+                  <Link href={routes.EXPLORE} className="text-white font-futura-pt text-lg">
                     Explore
-                  </a>
+                  </Link>
                 </li>
                 <li className=" p-4">
-                  <a href="#" className="text-white font-futura-pt text-lg">
+                  <Link href={routes.LEGAL} className="text-white font-futura-pt text-lg">
                     Legal
-                  </a>
+                  </Link>
                 </li>
                 <li className=" p-4">
-                  <a href="#" className="text-white font-futura-pt text-lg">
+                  <Link href={routes.CONTACT} className="text-white font-futura-pt text-lg">
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li className=" group">
                   <div className=" flex items-center justify-between p-4">

@@ -78,7 +78,7 @@ const ExploreSection = (props: ExploreSectionProps) => {
           ))}
         </div>
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden mt-7">
         <div ref={containerRef} className="w-full relative overflow-hidden">
           <motion.div className="flex w-full" initial={{ x: 0 }} animate={controls}>
             {exploreItems.map((item, index) => (
