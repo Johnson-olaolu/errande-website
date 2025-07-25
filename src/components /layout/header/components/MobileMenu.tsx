@@ -67,8 +67,9 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
                 <li className=" group">
                   <div className=" flex items-center justify-between p-4">
                     <a
+                      onClick={() => closeMenu()}
                       href={props.hash === "customer" || !props.hash ? routes.CUSTOMER : props.hash === "runner" ? routes.RUNNER : routes.VENDOR}
-                      className={"text-white font-futura-pt text-lg opacity-50" + (props.variant !== "blue" ? " opacity-50" : " opacity-100")}
+                      className={"text-white font-futura-pt text-lg opacity-50 block " + (props.variant !== "blue" ? " opacity-50" : " opacity-100")}
                     >
                       {props.hash === "customer" || !props.hash ? "Customer" : props.hash === "runner" ? "Runner" : "Vendor"}
                     </a>
@@ -80,7 +81,9 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
                         <a
                           href={routes.CUSTOMER}
                           onClick={() => closeMenu()}
-                          className={"text-white font-futura-pt text-lg " + (props.hash === "customer" || !props.hash ? "opacity-50" : "opacity-100")}
+                          className={
+                            "text-white font-futura-pt text-lg block " + (props.hash === "customer" || !props.hash ? "opacity-50" : "opacity-100")
+                          }
                         >
                           Customer
                         </a>
@@ -90,7 +93,7 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
                         <a
                           href={routes.RUNNER}
                           onClick={() => closeMenu()}
-                          className={"text-white font-futura-pt text-lg " + (props.hash === "runner" ? "opacity-50" : "opacity-100")}
+                          className={"text-white font-futura-pt text-lg block " + (props.hash === "runner" ? "opacity-50" : "opacity-100")}
                         >
                           Runner
                         </a>
@@ -99,7 +102,7 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
                         <a
                           href={routes.VENDOR}
                           onClick={() => closeMenu()}
-                          className={"text-white font-futura-pt text-lg " + (props.hash === "vendor" ? "opacity-50" : "opacity-100")}
+                          className={"text-white font-futura-pt text-lg block " + (props.hash === "vendor" ? "opacity-50" : "opacity-100")}
                         >
                           Vendor
                         </a>
