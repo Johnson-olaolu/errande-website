@@ -33,7 +33,7 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
             <div className=" rounded-2xl border border-white px-2">
               <ul className="divide-white divide-y">
                 <li className=" p-4">
-                  <Link href={routes.COMPANY} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => setShowMobileMenu(false)} href={routes.COMPANY} className="text-white font-futura-pt text-lg">
                     Company
                   </Link>
                 </li>
@@ -43,17 +43,17 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
                   </Link>
                 </li>
                 <li className=" p-4">
-                  <Link href={routes.EXPLORE} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => setShowMobileMenu(false)} href={routes.EXPLORE} className="text-white font-futura-pt text-lg">
                     Explore
                   </Link>
                 </li>
                 <li className=" p-4">
-                  <Link href={routes.LEGAL} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => setShowMobileMenu(false)} href={routes.LEGAL} className="text-white font-futura-pt text-lg">
                     Legal
                   </Link>
                 </li>
                 <li className=" p-4">
-                  <Link href={routes.CONTACT} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => setShowMobileMenu(false)} href={routes.CONTACT} className="text-white font-futura-pt text-lg">
                     Contact
                   </Link>
                 </li>

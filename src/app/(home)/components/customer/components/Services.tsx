@@ -31,7 +31,7 @@ const Services = () => {
           </Link>
         </div>
       </div>
-      <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-32 gap-12">
+      <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-32 gap-12 justify-self-center">
         <ServiceCard
           title="send errands "
           description="Clean, shop, and wash your clothes from the comfort of your home."
