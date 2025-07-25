@@ -20,8 +20,8 @@ const FilterBar = () => {
               onClick={() => setSelectedCategory(category)}
               disabled={category === selectedCategory}
               className={
-                " px-5 py-3 rounded-full  text-erande-blue font-antipasto-pro font-medium cursor-pointer disabled:cursor-auto " +
-                (category === selectedCategory && "bg-[#E3E7EC]")
+                " px-5 py-3 rounded-full  text-erande-blue font-antipasto-pro font-medium cursor-pointer disabled:cursor-auto border  border-[#CECECE] " +
+                (category === selectedCategory && "bg-[#E3E7EC] border-none")
               }
             >
               {category}
