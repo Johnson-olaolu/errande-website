@@ -242,6 +242,7 @@ const Header = () => {
         setShowMobileMenu={setShowMobileMenu}
         color={hash == "runner" ? "red" : hash == "vendor" ? "black" : "blue"}
         hash={hash}
+        variant={variant}
       />
     </>
   );

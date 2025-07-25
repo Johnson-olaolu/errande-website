@@ -1,7 +1,7 @@
 import { routes } from "@/app/routes";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
@@ -10,9 +10,16 @@ interface MobileMenuProps {
   setShowMobileMenu: (show: boolean) => void;
   color: "blue" | "red" | "black";
   hash: string;
+  variant?: "blue" | "red" | "white";
 }
 const MobileMenu: React.FC<MobileMenuProps> = (props) => {
   const { showMobileMenu, setShowMobileMenu } = props;
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const closeMenu = () => {
+    setShowMobileMenu(false);
+    setShowDropdown(false);
+  };
   return (
     <AnimatePresence>
       {showMobileMenu && (
@@ -27,33 +34,33 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
           }
         >
           <div className="py-28 px-8">
-            <button onClick={() => setShowMobileMenu(false)} className="absolute top-11 right-8">
+            <button onClick={() => closeMenu()} className="absolute top-11 right-8">
               <IoIosCloseCircleOutline size={28} className="text-white" />
             </button>
             <div className=" rounded-2xl border border-white px-2">
               <ul className="divide-white divide-y">
                 <li className=" p-4">
-                  <Link onClick={() => setShowMobileMenu(false)} href={routes.COMPANY} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => closeMenu()} href={routes.COMPANY} className="text-white font-futura-pt text-lg block">
                     Company
                   </Link>
                 </li>
                 <li className=" p-4">
-                  <Link onClick={() => setShowMobileMenu(false)} href={routes.SERVICES} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => closeMenu()} href={routes.SERVICES} className="text-white font-futura-pt text-lg block">
                     Services
                   </Link>
                 </li>
                 <li className=" p-4">
-                  <Link onClick={() => setShowMobileMenu(false)} href={routes.EXPLORE} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => closeMenu()} href={routes.EXPLORE} className="text-white font-futura-pt text-lg block">
                     Explore
                   </Link>
                 </li>
                 <li className=" p-4">
-                  <Link onClick={() => setShowMobileMenu(false)} href={routes.LEGAL} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => closeMenu()} href={routes.LEGAL} className="text-white font-futura-pt text-lg block">
                     Legal
                   </Link>
                 </li>
                 <li className=" p-4">
-                  <Link onClick={() => setShowMobileMenu(false)} href={routes.CONTACT} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => closeMenu()} href={routes.CONTACT} className="text-white font-futura-pt text-lg block">
                     Contact
                   </Link>
                 </li>
@@ -61,36 +68,44 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
                   <div className=" flex items-center justify-between p-4">
                     <a
                       href={props.hash === "customer" || !props.hash ? routes.CUSTOMER : props.hash === "runner" ? routes.RUNNER : routes.VENDOR}
-                      className="text-white font-futura-pt text-lg opacity-50"
+                      className={"text-white font-futura-pt text-lg opacity-50" + (props.variant !== "blue" ? " opacity-50" : " opacity-100")}
                     >
                       {props.hash === "customer" || !props.hash ? "Customer" : props.hash === "runner" ? "Runner" : "Vendor"}
                     </a>
-                    <FaChevronDown size={16} className="inline ml-2 text-white" />
+                    <FaChevronDown onClick={() => setShowDropdown(!showDropdown)} size={16} className="inline ml-2 text-white" />
                   </div>
-                  <ul>
-                    {props.hash !== "customer" && !!props.hash && (
+                  {showDropdown && (
+                    <ul>
                       <li className="p-4">
-                        <a href={routes.CUSTOMER} onClick={() => setShowMobileMenu(false)} className="text-white font-futura-pt text-lg ">
+                        <a
+                          href={routes.CUSTOMER}
+                          onClick={() => closeMenu()}
+                          className={"text-white font-futura-pt text-lg " + (props.hash === "customer" || !props.hash ? "opacity-50" : "opacity-100")}
+                        >
                           Customer
                         </a>
                       </li>
-                    )}
 
-                    {props.hash !== "runner" && (
                       <li className="p-4">
-                        <a href={routes.RUNNER} onClick={() => setShowMobileMenu(false)} className="text-white font-futura-pt text-lg ">
+                        <a
+                          href={routes.RUNNER}
+                          onClick={() => closeMenu()}
+                          className={"text-white font-futura-pt text-lg " + (props.hash === "runner" ? "opacity-50" : "opacity-100")}
+                        >
                           Runner
                         </a>
                       </li>
-                    )}
-                    {props.hash !== "vendor" && (
                       <li className="p-4">
-                        <a href={routes.VENDOR} onClick={() => setShowMobileMenu(false)} className="text-white font-futura-pt text-lg ">
+                        <a
+                          href={routes.VENDOR}
+                          onClick={() => closeMenu()}
+                          className={"text-white font-futura-pt text-lg " + (props.hash === "vendor" ? "opacity-50" : "opacity-100")}
+                        >
                           Vendor
                         </a>
                       </li>
-                    )}
-                  </ul>
+                    </ul>
+                  )}
                 </li>
               </ul>
             </div>
