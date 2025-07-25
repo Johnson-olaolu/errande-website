@@ -60,7 +60,7 @@ const FAQSection = ({ variant = "blue" }: FAQSectionProps) => {
             <div className=" h-full flex flex-col  gap-2 lg:gap-5 text-center lg:text-left">
               <h2 className=" text-2xl lg:text-5xl font-antipasto-pro text-white font-bold">Answers</h2>
               <div className=" flex-grow bg-erande-offwhite rounded-3xl min-h-[240px]">
-                <p className=" px-6 py-7 font-antipasto-pro text-erande-black text-[13px] lg:text-base leading-5 capitalize">
+                <p className=" px-6 py-7 font-futura-pt text-erande-black text-[13px] lg:text-base leading-5 capitalize">
                   {faqQuestionAnswers.find((faq) => faq.id === currentFAQ)?.answer}
                 </p>
               </div>

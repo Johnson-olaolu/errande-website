@@ -21,7 +21,7 @@ const FilterBar = () => {
               disabled={category === selectedCategory}
               className={
                 " px-5 py-3 rounded-full  text-erande-blue font-antipasto-pro font-medium cursor-pointer disabled:cursor-auto " +
-                (category === selectedCategory && "bg-erande-blue-opacity-15")
+                (category === selectedCategory && "bg-[#E3E7EC]")
               }
             >
               {category}
@@ -45,7 +45,7 @@ const FilterBar = () => {
                     setShowCategoryDropdown(false);
                   }}
                   className={
-                    "px-4 py-3 whitespace-nowrap rounded-full text-erande-blue bg-erande-blue-opacity-15 cursor-pointer  text-xs lg:text-sm border border-[#A9A9A9] hover:border-erande-blue " +
+                    "px-4 py-3 whitespace-nowrap rounded-full text-erande-blue bg-[#E3E7EC] cursor-pointer  text-xs lg:text-sm border border-[#A9A9A9] hover:border-erande-blue " +
                     (category === selectedCategory && "!border-erande-blue")
                   }
                 >
@@ -79,7 +79,7 @@ const FilterBar = () => {
                     setShowSortDropdown(false);
                   }}
                   className={
-                    "px-4 py-3 rounded-full text-erande-blue bg-erande-blue-opacity-15 cursor-pointer  text-xs lg:text-sm border border-[#A9A9A9] hover:border-erande-blue " +
+                    "px-4 py-3 rounded-full text-erande-blue bg-[#E3E7EC] cursor-pointer  text-xs lg:text-sm border border-[#A9A9A9] hover:border-erande-blue " +
                     (option === sortBy && "!border-erande-blue")
                   }
                 >
