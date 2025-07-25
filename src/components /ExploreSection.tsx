@@ -1,3 +1,4 @@
+import { routes } from "@/app/routes";
 import { useAnimation, motion } from "motion/react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -14,21 +15,21 @@ const ExploreSection = (props: ExploreSectionProps) => {
       title: "Send errands",
       description: "Clean, shop, and wash your clothes from the comfort of your home.",
       image: "/images/Explore1.png",
-      link: "#",
+      link: routes.EXPLORE,
     },
     {
       id: 2,
       title: "Send errands",
       description: "Clean, shop, and wash your clothes from the comfort of your home.",
       image: "/images/Explore2.png",
-      link: "#",
+      link: routes.EXPLORE,
     },
     {
       id: 3,
       title: "Send errands",
       description: "Clean, shop, and wash your clothes from the comfort of your home.",
       image: "/images/Explore3.png",
-      link: "#",
+      link: routes.EXPLORE,
     },
   ];
   const controls = useAnimation();
