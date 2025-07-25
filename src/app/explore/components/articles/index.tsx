@@ -5,11 +5,11 @@ import Pagination from "./components/Pagination";
 
 const Articles = () => {
   return (
-    <section className="bg-white  px-24">
-      <div className=" mb-11">
+    <section className="bg-white px-5  lg:px-24">
+      <div className=" mb-8 lg:mb-11">
         <div className="text-erande-blue w-full ">
-          <h2 className=" text-4xl font-antipasto-pro capitalize">Our Recent Article</h2>
-          <p className=" text-erande-tetiary text-xl font-futura-pt">Stay connected and informed on our latest news and updates.</p>
+          <h2 className=" text-3xl lg:text-4xl font-antipasto-pro capitalize">Our Recent Article</h2>
+          <p className=" text-erande-tetiary text-xs lg:text-xl font-futura-pt">Stay connected and informed on our latest news and updates.</p>
         </div>
       </div>
       <div className=" mb-24">

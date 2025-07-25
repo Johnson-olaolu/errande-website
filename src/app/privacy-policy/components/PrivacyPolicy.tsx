@@ -2,16 +2,16 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <section className=" bg-white py-40 px-24">
-      <div className="text-erande-blue w-full  shrink-0 pt-32">
-        <h2 className=" text-[80px] font-antipasto-pro capitalize">Privacy Policy</h2>
-        <p className=" text-erande-tetiary text-xl font-futura-pt">Last Updated: March 15, 2023</p>
+    <section className=" bg-white py-14 lg:py-40 px-5 lg:px-24">
+      <div className="text-erande-blue w-full  shrink-0 lg:pt-32">
+        <h2 className=" text-3xl lg:text-[80px] font-antipasto-pro capitalize">Privacy Policy</h2>
+        <p className=" text-erande-tetiary text-xs lg:text-xl font-futura-pt">Last Updated: March 15, 2023</p>
       </div>
       <div className="mt-24 flex items-start gap-24 mb-60">
         <div className=" grow">
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Introduction</h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Introduction</h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               Welcome to Erande, where we understand that your time is one of your most valuable assets. In today&apos;s fast-paced world, juggling
               daily responsibilities can often feel overwhelming. That&apos;s why we have dedicated ourselves to creating a comprehensive platform
               designed to alleviate the stress associated with everyday errands. Whether it&apos;s managing your laundry, arranging cleaning services,
@@ -30,8 +30,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Information We Collect</h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Information We Collect</h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
               data breaches are common, it’s crucial to be transparent about how we collect, use, and protect your data. Our privacy policy outlines
               the types of information we gather, including your name, contact details, and preferences, and how we utilize this information to
@@ -52,8 +52,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">How We Use Your Information</h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">How We Use Your Information</h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, your privacy is our top priority. We are dedicated to protecting your personal information and being transparent about our
               practices. In today’s digital landscape, where data breaches are a concern, it’s vital to explain how we collect, use, and safeguard
               your data. Our privacy policy details the types of information we gather, such as your name, contact information, and preferences, and
@@ -75,8 +75,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Sharing Your Information</h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Sharing Your Information</h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we believe in being open about how we handle your personal information. When you use our services, we may collect certain
               details that help us provide you with a better experience. This includes your name, email address, and preferences, which allow us to
               tailor our offerings to your needs. We want you to feel confident that your data is in safe hands.
@@ -106,8 +106,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Data Security</h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Data Security</h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
               data breaches are common, it’s crucial to be transparent about how we collect, use, and protect your data. Our privacy policy outlines
               the types of information we gather, including your name, contact details, and preferences, and how we utilize this information to
@@ -127,8 +127,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Your rights</h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Your rights</h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
               data breaches are common, it’s crucial to be transparent about how we collect, use, and protect your data. Our privacy policy outlines
               the types of information we gather, including your name, contact details, and preferences, and how we utilize this information to
@@ -151,8 +151,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Cookies and tracking technology. </h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Cookies and tracking technology. </h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
               data breaches are common, it’s crucial to be transparent about how we collect, use, and protect your data. Our privacy policy outlines
               the types of information we gather, including your name, contact details, and preferences, and how we utilize this information to
@@ -172,8 +172,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Third-Party Links. </h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Third-Party Links. </h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
               data breaches are common, it’s crucial to be transparent about how we collect, use, and protect your data. Our privacy policy outlines
               the types of information we gather, including your name, contact details, and preferences, and how we utilize this information to
@@ -196,8 +196,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Changes to privacy policy</h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Changes to privacy policy</h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
               data breaches are common, it’s crucial to be transparent about how we collect, use, and protect your data. Our privacy policy outlines
               the types of information we gather, including your name, contact details, and preferences, and how we utilize this information to
@@ -218,8 +218,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
           <div className=" mb-16">
-            <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Contact Us</h6>
-            <p className=" mt-7 text-lg font-futura-pt text-erande-tetiary">
+            <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Contact Us</h6>
+            <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
               data breaches are common, it’s crucial to be transparent about how we collect, use, and protect your data. Our privacy policy outlines
               the types of information we gather, including your name, contact details, and preferences, and how we utilize this information to
@@ -242,8 +242,8 @@ const PrivacyPolicy = () => {
             </p>
           </div>
         </div>
-        <div className=" w-[400px] shrink-0">
-          <h6 className=" text-4xl font-antipasto-pro text-erande-blue">Table of Content</h6>
+        <div className=" hidden lg:block w-[400px] shrink-0">
+          <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Table of Content</h6>
           <div className="mt-7 pl-4">
             <ul className=" list-decimal custom-list-style">
               <li className=" marker:text-erande-blue marker:font-futura-pt">
