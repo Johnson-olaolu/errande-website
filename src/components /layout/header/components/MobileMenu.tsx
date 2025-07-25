@@ -38,7 +38,7 @@ const MobileMenu: React.FC<MobileMenuProps> = (props) => {
                   </Link>
                 </li>
                 <li className=" p-4">
-                  <Link href={routes.SERVICES} className="text-white font-futura-pt text-lg">
+                  <Link onClick={() => setShowMobileMenu(false)} href={routes.SERVICES} className="text-white font-futura-pt text-lg">
                     Services
                   </Link>
                 </li>
