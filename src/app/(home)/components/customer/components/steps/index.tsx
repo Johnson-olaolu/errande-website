@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { motion, useAnimation } from "motion/react";
+import { AnimatePresence, motion, useAnimation, Variants } from "motion/react";
 import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
 import Step3 from "./components/Step3";
 import { FaChevronRight } from "react-icons/fa6";
 
 const Steps = () => {
-  const controls = useAnimation();
   const [currentStep, setCurrentStep] = useState(0);
-  const containerRef = React.useRef<HTMLDivElement>(null);
 
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
@@ -24,24 +22,57 @@ const Steps = () => {
     { id: 3, title: "Step 3", component: <Step3 /> },
   ];
 
+  const fadeVariants: Variants = {
+    initial: {
+      opacity: 0,
+      x: "100%",
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeInOut",
+      },
+    },
+    exit: {
+      opacity: 0,
+      x: "-100%",
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const nextComponent = () => {
+    setCurrentStep((prev) => (prev + 1) % steps.length);
+  };
+
   useEffect(() => {
-    if (!containerRef.current) return;
-    controls.start({
-      x: -currentStep * containerRef.current.clientWidth,
-      transition: { duration: 0.8, ease: "easeInOut" },
-    });
-  }, [currentStep, controls]);
+    const interval = setInterval(nextComponent, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className=" -mt-[200px]">
       <div className="px-8 lg:px-28">
-        <div ref={containerRef} className="w-full relative overflow-hidden transform translate-y-1/2 ">
-          <motion.div className="flex w-full" initial={{ x: 0 }} animate={controls}>
-            {steps.map((step) => (
-              <div key={step.id} className="w-full shrink-0">
-                {step.component}
-              </div>
-            ))}
+        <div className="w-full relative overflow-hidden transform translate-y-1/2 ">
+          <motion.div
+            className="overflow-hidden"
+            layout
+            transition={{
+              layout: {
+                duration: 0,
+                ease: "easeInOut",
+              },
+            }}
+          >
+            <AnimatePresence mode="popLayout">
+              <motion.div key={currentStep} variants={fadeVariants} initial="initial" animate="animate" exit="exit" layout>
+                {steps[currentStep].component}
+              </motion.div>
+            </AnimatePresence>
           </motion.div>
           <div className="absolute left-0 w-full bottom-12 lg:bottom-48 px-8 lg:px-44">
             <div className="flex items-center justify-between">

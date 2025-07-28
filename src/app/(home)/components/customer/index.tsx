@@ -14,7 +14,7 @@ interface CustomerPageProps {
 const CustomerPage = (props: CustomerPageProps) => {
   const { nextSection } = props;
   return (
-    <main className="">
+    <main className="bg-white">
       <Jumbotron nextSection={nextSection} />
       <Services />
       <Locations />

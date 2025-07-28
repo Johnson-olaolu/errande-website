@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useAnimation } from "motion/react";
+import { motion, AnimatePresence, Variants } from "motion/react";
 import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import CustomerPage from "./components/customer";
 import RunnerPage from "./components/runner";
@@ -8,10 +8,6 @@ import VendorPage from "./components/vendor";
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(0);
-  const containerRef1 = useRef<HTMLDivElement>(null);
-  const containerRef2 = useRef<HTMLDivElement>(null);
-  const containerRef3 = useRef<HTMLDivElement>(null);
-  const controls = useAnimation();
 
   const nextSection = useCallback(() => {
     if (currentSection < sections.length - 1) {
@@ -69,49 +65,43 @@ export default function Home() {
     };
   }, [getSectionFromHash]);
 
-  useEffect(() => {
-    controls.start({
-      x: -currentSection * window.innerWidth,
-      transition: { duration: 0.8, ease: "easeInOut" },
-    });
-  }, [currentSection, controls]);
-
-  useEffect(() => {
-    console.log({
-      height1: containerRef1.current?.clientHeight,
-      height2: containerRef2.current?.clientHeight,
-      height3: containerRef3.current?.clientHeight,
-    });
-  }, [currentSection, controls]);
+  const fadeVariants: Variants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeIn",
+      },
+    },
+  };
 
   return (
-    <div className="relative w-screen overflow-hidden bg-white">
+    <div className="w-screen">
       <motion.div
-        className="flex items-start"
-        animate={controls}
-        style={{
-          width: `${sections.length * 100}vw`,
-          height: `${
-            currentSection === 0
-              ? containerRef1.current?.clientHeight
-              : currentSection === 1
-              ? containerRef2.current?.clientHeight
-              : containerRef3.current?.clientHeight
-          }px`,
+        className="overflow-hidden"
+        layout
+        transition={{
+          layout: {
+            duration: 0.5,
+            ease: "easeInOut",
+          },
         }}
       >
-        {sections.map((section, index) => (
-          <motion.div
-            ref={index === 0 ? containerRef1 : index === 1 ? containerRef2 : containerRef3}
-            key={index}
-            className={`w-screen `}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            {section.component}
+        <AnimatePresence mode="wait">
+          <motion.div key={currentSection} variants={fadeVariants} initial="initial" animate="animate" exit="exit" layout>
+            {sections[currentSection].component}
           </motion.div>
-        ))}
+        </AnimatePresence>
       </motion.div>
     </div>
   );

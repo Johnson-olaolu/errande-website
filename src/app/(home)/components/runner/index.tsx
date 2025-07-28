@@ -11,7 +11,7 @@ interface RunnerPageProps {
 }
 const RunnerPage: React.FC<RunnerPageProps> = ({ nextSection }) => {
   return (
-    <main className="">
+    <main className="bg-white">
       <Jumbotron nextSection={nextSection} />
       <Services />
       <Benefits />

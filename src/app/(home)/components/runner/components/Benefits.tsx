@@ -41,6 +41,14 @@ const Benefits = () => {
     });
   }, [currentBenefits, controls]);
 
+  useEffect(() => {
+    function nextComponent() {
+      setCurrentBenefits((prev) => (prev + 1) % benefitItems.length);
+    }
+    const interval = setInterval(nextComponent, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="mt-20 lg:mt-40  relative px-8 lg:px-28 overflow-hidden">
       <div className=" px-8 lg:px-52 ">

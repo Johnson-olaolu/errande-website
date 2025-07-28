@@ -11,7 +11,7 @@ interface VendorPageProps {
 }
 const VendorPage: React.FC<VendorPageProps> = ({ nextSection }) => {
   return (
-    <main className="">
+    <main className=" bg-white">
       <Jumbotron nextSection={nextSection} />
       <Services />
       <Benefits />
