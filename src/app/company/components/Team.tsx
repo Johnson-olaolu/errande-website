@@ -2,6 +2,38 @@ import TeamMemberCard from "@/components /TeamMemberCard";
 import React from "react";
 
 const Team = () => {
+  const teamMembersInfo = [
+    {
+      name: "Stanley Inyang",
+      position: "CEO",
+      description: "A marketing and tech strategist with over 10 years leading digital innovation and startup growth.",
+    },
+    {
+      name: "Patrick JwanShak",
+      position: "COO",
+      description: "A trained pilot and logistics expert ensuring operational  precision and delivery excellence.",
+    },
+    {
+      name: "Ifeoma",
+      position: "CFO",
+      description: "A financial powerhouse with a track record in building sustainable,  scalable revenue systems.",
+    },
+    {
+      name: "Marvelous Eniobong",
+      position: "Head of Product",
+      description: "A marketing and tech strategist with over 10 years leading  digital innovation and startup growth.",
+    },
+    {
+      name: "Kazeem Asiwaju",
+      position: "Head of Tech",
+      description: "A trained pilot and logistics expert ensuring operational  precision and delivery excellence.",
+    },
+    {
+      name: "Okon Akpan",
+      position: "Head of Growth",
+      description: "A trained pilot and logistics expert ensuring operational  precision and delivery excellence.",
+    },
+  ];
   return (
     <section className="px-5 lg:px-24 py-20 lg:py-48 bg-white">
       <div className="text-erande-blue w-full ">
@@ -11,8 +43,8 @@ const Team = () => {
         </p>
       </div>
       <div className="mt-14 lg:mt-20 grid lg:grid-cols-3 gap-10">
-        {[...Array(6)].map((_, index) => (
-          <TeamMemberCard key={index} />
+        {teamMembersInfo.map((member, index) => (
+          <TeamMemberCard key={index} {...member} />
         ))}
       </div>
     </section>

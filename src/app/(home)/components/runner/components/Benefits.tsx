@@ -50,10 +50,10 @@ const Benefits = () => {
   }, []);
 
   return (
-    <section className="mt-20 lg:mt-40  relative px-8 lg:px-28 overflow-hidden">
-      <div className=" px-8 lg:px-52 ">
+    <section className="  relative px-8 lg:px-28 overflow-hidden">
+      {/* <div className=" px-8 lg:px-52 ">
         <div className="h-px bg-erande-black w-full"></div>
-      </div>
+      </div> */}
       <div ref={containerRef} className=" w-full overflow-hidden">
         <motion.div className="flex w-full" initial={{ x: 0 }} animate={controls}>
           {benefitItems.map((item, index) => (
@@ -109,9 +109,9 @@ const Benefits = () => {
         width={1080}
         className="absolute top-20 lg:top-32 -left-56 transform -scale-x-100 h-11"
       />
-      <div className=" px-8 lg:px-52 ">
+      {/* <div className=" px-8 lg:px-52 ">
         <div className="h-px bg-erande-black w-full"></div>
-      </div>
+      </div> */}
     </section>
   );
 };
