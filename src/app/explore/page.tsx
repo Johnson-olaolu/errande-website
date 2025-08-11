@@ -1,7 +1,6 @@
 import SubscribeSection from "@/components /SubscribeSection";
 import React from "react";
 import FeaturedBlog from "./components/FeaturedBlog";
-import FAQ from "./components/FAQ";
 import Articles from "./components/articles";
 
 const ExplorePage = () => {
@@ -20,7 +19,6 @@ const ExplorePage = () => {
         text="Experience the convenience of Erande, where we handle your errands with care and efficiency. From groceries to laundry, we’re here to make your life easier."
         image="/images/FeaturedBlog2.png"
       />
-      {/* <FAQ /> */}
       <SubscribeSection />
     </main>
   );
