@@ -33,21 +33,21 @@ const Services = () => {
       </div>
       <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-32 gap-12">
         <ServiceCard
-          title="Send errands "
-          description="Clean, shop, and wash your clothes from the comfort of your home."
-          imageUrl="/images/Customer-services-1.png"
+          title="Real-Time Tracking"
+          description="Track every delivery from your store to your customer — full transparency, zero guesswork."
+          imageUrl="/images/Vendor-services-1.png"
           color="black"
         />
         <ServiceCard
-          title="Affordable prices"
-          description="Enjoy zero extra fees and affordable meal, erande got you covered."
-          imageUrl="/images/Customer-services-2.png"
+          title="Reliable Fulfilment"
+          description="Our trained delivery partners ensure your orders get to customers fast and in perfect condition."
+          imageUrl="/images/Vendor-services-2.png"
           color="black"
         />
         <ServiceCard
-          title="Enjoy good food"
-          description="Enjoy good and nice food and products from different restaurants and shops."
-          imageUrl="/images/Customer-services-3.png"
+          title="On-Demand Logistics"
+          description="Scale your delivery capacity instantly without hiring — plug into our network as needed."
+          imageUrl="/images/Vendor-services-3.png"
           color="black"
         />
       </div>

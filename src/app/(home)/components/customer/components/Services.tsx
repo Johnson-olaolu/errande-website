@@ -40,13 +40,13 @@ const Services = () => {
         />
         <ServiceCard
           title="Affordable prices"
-          description="Enjoy zero extra fees and affordable meal, erande got you covered."
+          description="Enjoy zero extra fees and affordable meal, Erande got you covered."
           imageUrl="/images/Customer-services-2.png"
           color="blue"
         />
         <ServiceCard
           title="Enjoy good food"
-          description="Enjoy good and nice food and products from different restaurants and shops."
+          description="Savor tasty dishes and products from your favorite local restaurants and shops."
           imageUrl="/images/Customer-services-3.png"
           color="blue"
         />

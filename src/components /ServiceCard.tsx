@@ -34,7 +34,7 @@ const ServiceCard: React.FC<ServiceCardProps> = (props) => {
           (props.color === "blue" ? " border-erande-blue" : props.color === "red" ? " border-erande-red" : " border-erande-black")
         }
       >
-        <h6 className=" text-2xl font-antipasto-pro font-medium">{title}</h6>
+        <h6 className=" text-2xl font-antipasto-pro font-medium capitalize">{title}</h6>
         <p className=" text-gray-600 font-futura-pt text-sm">{description}</p>
       </div>
     </div>

@@ -1,5 +1,6 @@
 "use client";
 import { faqQuestionAnswers } from "@/utils/constants";
+import { ul } from "motion/react-client";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -30,7 +31,9 @@ const FAQSection = ({ variant = "blue" }: FAQSectionProps) => {
                   key={index}
                   className={" py-5 px-10 rounded-xl border-2 border-white cursor-pointer " + (currentFAQ === faq.id ? " bg-white" : "")}
                 >
-                  <p className=" text-erande-black font-futura-pt">{faq.question}</p>
+                  <div className=" text-erande-black font-futura-pt">
+                    <p className="">{faq.question}</p>
+                  </div>
                 </li>
               ))}
             </ul>
@@ -60,9 +63,22 @@ const FAQSection = ({ variant = "blue" }: FAQSectionProps) => {
             <div className=" h-full flex flex-col  gap-2 lg:gap-5 text-center lg:text-left">
               <h2 className=" text-2xl lg:text-5xl font-antipasto-pro text-white font-bold">Answers</h2>
               <div className=" flex-grow bg-erande-offwhite rounded-3xl min-h-[240px]">
-                <p className=" px-6 py-7 font-futura-pt text-erande-black text-[13px] lg:text-base leading-5 capitalize">
-                  {faqQuestionAnswers.find((faq) => faq.id === currentFAQ)?.answer}
-                </p>
+                <div className=" px-6 py-7 font-futura-pt text-erande-black text-[13px] lg:text-base leading-5 capitalize space-y-2.5">
+                  <p className="">{faqQuestionAnswers.find((faq) => faq.id === currentFAQ)?.answer}</p>
+                  {faqQuestionAnswers.find((faq) => faq.id === currentFAQ)?.items ? (
+                    <ul className=" list-disc pl-4 space-y-1">
+                      {faqQuestionAnswers
+                        .find((faq) => faq.id === currentFAQ)
+                        ?.items?.map((item, index) => (
+                          <li key={index} className="">
+                            {item}
+                          </li>
+                        ))}
+                    </ul>
+                  ) : (
+                    <></>
+                  )}
+                </div>
               </div>
             </div>
           </div>

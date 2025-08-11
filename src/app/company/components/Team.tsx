@@ -6,32 +6,36 @@ const Team = () => {
     {
       name: "Stanley Inyang",
       position: "CEO",
-      description: "A marketing and tech strategist with over 10 years leading digital innovation and startup growth.",
+      image: "/images/stanley-inyang.png",
+      description:
+        "Is a seasoned marketing and startup leader with over 8 years of experience in branding, PR, advertising, and digital growth strategies. He has helped build startups and worked with fintech brands for over three years, combining marketing expertise with product and user journey knowledge. Stanley has led campaigns for top brands like Wakanow, Mentos, First Bank, and MainOne, and holds certifications in digital strategy and brand communication. He brings a trusted media network across TV, radio, and print, with strong capabilities in B2B/B2C sales funnels and performance-driven marketing. Now focused on scaling impact, he helps businesses optimize marketing spend, drive growth, and expand across African markets.",
+      variant: "large",
     },
     {
       name: "Patrick JwanShak",
+      image: "/images/patrick-jwanshak.png",
       position: "COO",
       description: "A trained pilot and logistics expert ensuring operational  precision and delivery excellence.",
     },
     {
-      name: "Ifeoma",
+      name: "Ifeoma Nweje",
+      image: "/images/ifeoma-nweje.png",
       position: "CFO",
       description: "A financial powerhouse with a track record in building sustainable,  scalable revenue systems.",
     },
     {
-      name: "Marvelous Eniobong",
-      position: "Head of Product",
-      description: "A marketing and tech strategist with over 10 years leading  digital innovation and startup growth.",
-    },
-    {
       name: "Kazeem Asiwaju",
+      image: "/images/kazeem-asiwaju.png",
       position: "Head of Tech",
-      description: "A trained pilot and logistics expert ensuring operational  precision and delivery excellence.",
+      description:
+        "Is a seasoned Cloud Architect with 7+ years building scalable platforms across fintech, SaaS, and logistics. He leads API-first, cloud-native architecture and drives DevSecOps, automation, and engineering excellence. His expertise spans backend, frontend, and cloud, aligning tech with business growth.",
     },
     {
-      name: "Okon Akpan",
+      name: "Alexander Olafare",
+      image: "/images/alexander-olafare.png",
       position: "Head of Growth",
-      description: "A trained pilot and logistics expert ensuring operational  precision and delivery excellence.",
+      description:
+        "A digital growth leader with 13 years of experience driving e-commerce success, scaling paid media, and leading CRM and international expansion for startups and high-growth teams.",
     },
   ];
   return (

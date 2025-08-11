@@ -27,7 +27,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
               </div>
               <div className="max-w-[330px] lg:max-w-[278px] w-full text-center lg:text-right">
                 <p className=" capitalize text-sm lg:text-lg font-antipasto-pro text-white">
-                  Our service offers rapid, dependable errand and delivery solutions, ensuring your tasks are completed efficiently and timely.
+                  We deliver rapid, dependable errand and delivery solutions — getting your tasks done efficiently and right on time.
                 </p>
               </div>
             </div>

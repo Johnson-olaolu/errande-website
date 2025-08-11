@@ -24,13 +24,11 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
             </div>
             <div className=" flex flex-col lg:flex-row justify-between gap-2.5 items-center lg:items-start">
               <div className=" max-w-[330px] lg:max-w-[456px] w-full text-center lg:text-left">
-                <p className=" capitalize text-2xl lg:text-4xl font-antipasto-pro text-white">
-                  Become a rider <br /> asap!!
-                </p>
+                <p className=" capitalize text-2xl lg:text-4xl font-antipasto-pro text-white">Join the Erande Rider Squad - Start Earning Today!</p>
               </div>
               <div className="max-w-[330px] lg:max-w-[278px] w-full text-center lg:text-right">
                 <p className=" capitalize text-sm lg:text-lg font-antipasto-pro text-white">
-                  Our service offers rapid, dependable errand and delivery solutions, ensuring your tasks are completed efficiently and timely.
+                  Fast, dependable errand and delivery gigs waiting for you. Bring your hustle, we’ll handle the rest.
                 </p>
               </div>
             </div>

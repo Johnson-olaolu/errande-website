@@ -7,7 +7,7 @@ const ServicesPage = () => {
   return (
     <main>
       <Services />
-      <FAQ />
+      {/* <FAQ /> */}
       <SubscribeSection />
     </main>
   );

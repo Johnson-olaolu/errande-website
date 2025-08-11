@@ -1,64 +1,162 @@
 export const faqQuestionAnswers = [
   {
     id: 1,
-    question: "What services do you offer?",
+    question: "What is Erande?",
     answer:
-      "Chowdeck is a technology company that provides logistics services to both vendors and consumers. This potentially allows food vendors to deliver meals seamlessly while also providing consumers with an easy platform to order meals from their favourite restaurants in their city.",
+      " Erande is an errand and lifestyle marketplace that connects customers with vendors and runners who help fulfill everyday errands like laundry, cleaning, shopping, food delivery, and more.",
   },
   {
     id: 2,
-    question: "How do I place an order?",
+    question: "Who can become a vendor on Erande?",
     answer:
-      "You can place an order through our mobile app or website. Simply browse restaurants in your area, select your items, add them to cart, and proceed to checkout with your preferred payment method.",
+      "Any verified business or service provider offering cleaning, laundry, groceries, food, household needs, or other personal services within our supported locations can join.",
   },
   {
     id: 3,
-    question: "What are your delivery hours?",
-    answer: "We operate daily from 8:00 AM to 10:00 PM. However, delivery hours may vary depending on restaurant availability and your location.",
+    question: "What services does Erande currently support?",
+    answer: " We currently support:",
+    items: [
+      "Laundry & Dry Cleaning",
+      "Cleaning Services",
+      "Grocery Delivery",
+      "Food & Drinks",
+      "Pharmacy errands",
+      "Basic household errands (pick-up/drop-off, etc.)",
+    ],
   },
   {
     id: 4,
-    question: "How long does delivery take?",
-    answer: "Typical delivery times range from 30-45 minutes, depending on your location, traffic conditions, and restaurant preparation time.",
+    question: "How do I register as a vendor on Erande?",
+    answer:
+      " You can register via the Erande Vendor App or our website. Once you complete the form, our team will reach out to verify your business and complete your onboarding.",
   },
   {
     id: 5,
-    question: "What payment methods do you accept?",
-    answer:
-      "We accept various payment methods including credit/debit cards, mobile money, and cash on delivery. All online payments are processed securely.",
+    question: "What documents do I need to provide?",
+    items: [
+      "Valid government-issued ID",
+      "Business registration certificate (if available)",
+      "Proof of address or utility bill",
+      "Bank account details (must match BVN)",
+      "Photos of your service/products",
+    ],
   },
   {
     id: 6,
-    question: "Do you have a minimum order value?",
-    answer:
-      "Minimum order values may vary by restaurant. You can check the minimum order requirement on each restaurant's page before placing your order.",
+    question: "Is there a registration fee?",
+    answer: " No, registration is free. However, Erande retains a commission on completed orders.",
   },
   {
     id: 7,
-    question: "How can I track my order?",
-    answer:
-      "Once your order is confirmed, you can track it real-time through our app or website. You'll receive updates at each stage from preparation to delivery.",
+    question: "How long does the onboarding process take?",
+    answer: " Once all documents are submitted, onboarding takes 24–48 hours. You’ll receive login credentials and training materials thereafter.",
   },
   {
     id: 8,
-    question: "What if I need to cancel my order?",
-    answer: "You can cancel your order within 5 minutes of placing it. After that, please contact our customer support team for assistance.",
+    question: "How does Erande make money?",
+    answer: "We take a commission of 20–35% on each transaction, depending on your service category.",
   },
   {
     id: 9,
-    question: "Are there any delivery fees?",
-    answer: "Delivery fees are calculated based on your distance from the restaurant. The exact fee will be shown before you confirm your order.",
+    question: "Who sets the pricing of my services/products?",
+    answer: " You do. Vendors set their prices, but we’ll advise on competitiveness where needed.",
   },
   {
     id: 10,
-    question: "How can I become a restaurant partner?",
+    question: "How do I get paid?",
     answer:
-      "Restaurant owners can partner with us by filling out the partner application form on our website or contacting our business development team.",
+      "Payments are disbursed to your registered bank account after a completed service, typically within 24–72 hours, depending on the payment method used.",
   },
   {
     id: 11,
-    question: "What if there's an issue with my order?",
+    question: "Is there an escrow system?",
     answer:
-      "If you experience any issues with your order, please contact our 24/7 customer support team through the app or website. We'll work to resolve your concern as quickly as possible.",
+      " Yes. Customer payments are held in escrow until the service is marked completed and approved by the customer. Also note, escrow service is available for service-providing vendors only.",
+  },
+  {
+    id: 12,
+    question: "Can I offer discounts or promotions?",
+    answer: "Yes, you can run promotions from your dashboard, and we’ll also notify you of seasonal Erande campaigns you can join.",
+  },
+  {
+    id: 13,
+    question: "Who handles the delivery or fulfillment?",
+    items: [
+      "For product-based vendors (e.g., food, groceries, etc), our runners or delivery partners will handle pick-up and delivery.",
+      "For service-based vendors (e.g., cleaning, laundry), your team handles pick-up and drop-off fulfillment directly.",
+    ],
+  },
+  {
+    id: 14,
+    question: "What happens if a customer complains?",
+    answer:
+      "If a complaint is raised, Erande will investigate and may refund the customer if the vendor is at fault. Multiple negative reports may result in penalties or delisting.",
+  },
+  {
+    id: 15,
+    question: "Can I contact the customer directly?",
+    answer:
+      " Yes. Once a task is assigned, you can communicate with the customer in-app or via phone (details are only shared after order acceptance).",
+  },
+  {
+    id: 16,
+    question: "What should I do if I can’t fulfill an order?",
+    answer:
+      " Notify Erande support immediately so we can inform the customer or assign another vendor. Repeated cancellations may affect your rating.",
+  },
+  {
+    id: 17,
+    question: "How does the rating system work?",
+    answer:
+      " Customers rate vendors after each service. A consistently high rating helps you rank better and gain more visibility. Low ratings trigger performance reviews.",
+  },
+  {
+    id: 18,
+    question: "Can I get suspended or removed?",
+    answer: " Yes, vendors can be temporarily suspended or permanently removed for:",
+    items: ["Frequent cancellations", "Fraudulent activity", "Poor service delivery", "Repeated customer complaints"],
+  },
+  {
+    id: 19,
+    question: "Can I update my products, pricing, or availability?",
+    answer: "Yes, via your Vendor Dashboard. You can add/remove products/services, adjust prices, and set your operating hours.",
+  },
+  {
+    id: 20,
+    question: "Will I get support as a vendor?",
+    answer: "Absolutely. We offer vendor support via:",
+    items: ["In-app help", "WhatsApp", "Phone support", "Training resources during onboarding"],
+  },
+  {
+    id: 21,
+    question: "Will Erande help me get customers?",
+    answer:
+      " Yes. We actively market the platform via digital ads, partnerships, influencer campaigns, and more. You’ll benefit from our overall customer acquisition efforts.",
+  },
+  {
+    id: 22,
+    question: "Can I boost my visibility on the app?",
+    answer:
+      "Yes. You can opt into our Vendor Boost Package for increased visibility in search results, featured listings, and special promo placements.",
+  },
+  {
+    id: 23,
+    question: "Can I participate in partnerships?",
+    answer: "Yes. Vendors who meet our quality and service standards will be considered for premium partnership campaigns and sponsored promotions.",
+  },
+  {
+    id: 24,
+    question: "Do I need to have a physical location?",
+    answer: "Not necessarily. However, you must be reachable, able to fulfill orders promptly, and operate within our coverage zones.",
+  },
+  {
+    id: 25,
+    question: "Can I operate in multiple locations?",
+    answer: "Yes, if you can service multiple areas reliably. Let us know during onboarding so we can map your delivery/service zones.",
+  },
+  {
+    id: 26,
+    question: " Can I pause my account temporarily?",
+    answer: "Yes. You can mark yourself as “Unavailable” in the app if you're unable to take orders for a period.",
   },
 ];
