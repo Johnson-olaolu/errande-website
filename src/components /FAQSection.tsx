@@ -1,6 +1,5 @@
 "use client";
 import { faqQuestionAnswers } from "@/utils/constants";
-import { ul } from "motion/react-client";
 import Image from "next/image";
 import React, { useState } from "react";
 
