@@ -15,7 +15,7 @@ const CompanyPage = () => {
       <Mission />
       <Focus />
       <Team />
-      <FAQ />
+      {/* <FAQ /> */}
       <SubscribeSection />
     </main>
   );

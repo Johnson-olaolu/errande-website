@@ -20,7 +20,7 @@ const ExplorePage = () => {
         text="Experience the convenience of Erande, where we handle your errands with care and efficiency. From groceries to laundry, we’re here to make your life easier."
         image="/images/FeaturedBlog2.png"
       />
-      <FAQ />
+      {/* <FAQ /> */}
       <SubscribeSection />
     </main>
   );

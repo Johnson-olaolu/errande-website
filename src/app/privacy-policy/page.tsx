@@ -7,7 +7,7 @@ const PrivacyPolicyPage = () => {
   return (
     <main>
       <PrivacyPolicy />
-      <FAQ />
+      {/* <FAQ /> */}
       <SubscribeSection />
     </main>
   );

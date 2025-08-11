@@ -24,11 +24,11 @@ const Team = () => {
       description: "A financial powerhouse with a track record in building sustainable,  scalable revenue systems.",
     },
     {
-      name: "Kazeem Asiwaju",
+      name: "Kazeem Asiwaju-Bello",
       image: "/images/kazeem-asiwaju.png",
       position: "Head of Tech",
       description:
-        "Is a seasoned Cloud Architect with 7+ years building scalable platforms across fintech, SaaS, and logistics. He leads API-first, cloud-native architecture and drives DevSecOps, automation, and engineering excellence. His expertise spans backend, frontend, and cloud, aligning tech with business growth.",
+        "Is a seasoned Enterprise & Cloud Architect with 7+ years building scalable platforms across fintech, SaaS, and logistics. He leads API-first, cloud-native architecture and drives DevSecOps, automation, and engineering excellence. His expertise spans backend, frontend, and cloud, aligning tech with business growth.",
     },
     {
       name: "Alexander Olafare",

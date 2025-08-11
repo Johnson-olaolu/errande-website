@@ -1,12 +1,17 @@
 "use client";
-import { faqQuestionAnswers } from "@/utils/constants";
 import Image from "next/image";
 import React, { useState } from "react";
 
 interface FAQSectionProps {
   variant?: "blue" | "red" | "black";
+  faqs: {
+    id: number;
+    question: string;
+    answer?: string;
+    items?: string[];
+  }[];
 }
-const FAQSection = ({ variant = "blue" }: FAQSectionProps) => {
+const FAQSection = ({ variant = "blue", faqs }: FAQSectionProps) => {
   const [currentFAQ, setCurrentFAQ] = useState(1);
   return (
     <div className="">
@@ -24,7 +29,7 @@ const FAQSection = ({ variant = "blue" }: FAQSectionProps) => {
         <div className=" hidden lg:block h-[796px] bg-erande-offwhite grow px-20 py-24">
           <div className="overflow-y-scroll h-full custom-scrollbar">
             <ul className=" space-y-6  h-full pr-12">
-              {faqQuestionAnswers.map((faq, index) => (
+              {faqs.map((faq, index) => (
                 <li
                   onClick={() => setCurrentFAQ(faq.id)}
                   key={index}
@@ -63,10 +68,10 @@ const FAQSection = ({ variant = "blue" }: FAQSectionProps) => {
               <h2 className=" text-2xl lg:text-5xl font-antipasto-pro text-white font-bold">Answers</h2>
               <div className=" flex-grow bg-erande-offwhite rounded-3xl min-h-[240px]">
                 <div className=" px-6 py-7 font-futura-pt text-erande-black text-[13px] lg:text-base leading-5 capitalize space-y-2.5">
-                  <p className="">{faqQuestionAnswers.find((faq) => faq.id === currentFAQ)?.answer}</p>
-                  {faqQuestionAnswers.find((faq) => faq.id === currentFAQ)?.items ? (
+                  <p className="">{faqs.find((faq) => faq.id === currentFAQ)?.answer}</p>
+                  {faqs.find((faq) => faq.id === currentFAQ)?.items ? (
                     <ul className=" list-disc pl-4 space-y-1">
-                      {faqQuestionAnswers
+                      {faqs
                         .find((faq) => faq.id === currentFAQ)
                         ?.items?.map((item, index) => (
                           <li key={index} className="">
@@ -84,7 +89,7 @@ const FAQSection = ({ variant = "blue" }: FAQSectionProps) => {
           <div className=" mt-16 lg:hidden overflow-x-auto custom-scrollbar-mobile pb-3">
             <div className="border-white border p-2.5 rounded-lg " style={{ width: "max-content" }}>
               <ul className=" flex items-center gap-4">
-                {faqQuestionAnswers.map((faq, index) => (
+                {faqs.map((faq, index) => (
                   <li
                     onClick={() => setCurrentFAQ(faq.id)}
                     key={index}

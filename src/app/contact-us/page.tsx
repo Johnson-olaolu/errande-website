@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <main>
       <ContactForm />
-      <FAQ />
+      {/* <FAQ /> */}
       <SubscribeSection />
     </main>
   );

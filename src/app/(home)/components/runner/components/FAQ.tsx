@@ -1,11 +1,12 @@
 import FAQSection from "@/components /FAQSection";
+import { faqQuestionAnswersRunner } from "@/utils/constants";
 import React from "react";
 
 const FAQ = () => {
   return (
     <section className="mb-16 lg:mb-32 mt-16 lg:mt-32">
       <div className="px-8 lg:px-28  ">
-        <FAQSection variant="red" />
+        <FAQSection faqs={faqQuestionAnswersRunner} variant="red" />
       </div>
     </section>
   );
