@@ -47,7 +47,7 @@ const TeamMemberCard = ({ name, position, image, description, variant = "normal"
       ) : (
         <div className=" px-6 lg:px-8 py-8 lg:py-9 pb-11 rounded-3xl border border-erande-blue">
           {image ? (
-            <Image height={240} width={240} src={image} alt={`${name}'s photo`} className="w-full h-60 object-cover rounded-2xl mb-6 object-center" />
+            <Image height={240} width={240} src={image} alt={`${name}'s photo`} className="w-full h-60 object-cover rounded-2xl mb-6 object-top" />
           ) : (
             <div className="h-60 w-full bg-gray-200 rounded-2xl mb-6"></div>
           )}
