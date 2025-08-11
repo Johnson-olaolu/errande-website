@@ -39,7 +39,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
             <Image
               src="/images/shop.png"
               alt="shop"
-              className=" absolute -top-14  lg:-top-8  left-1/2 transform -translate-x-1/2 lg:h-auto lg:w-[443px] w-[300] object-cover"
+              className=" absolute -top-14  lg:-top-28  left-1/2 transform -translate-x-1/2 lg:h-auto lg:w-[443px] w-[300] object-cover"
               height={665}
               width={443}
             />
