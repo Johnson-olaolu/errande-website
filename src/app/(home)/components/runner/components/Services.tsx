@@ -31,7 +31,7 @@ const Services = () => {
           </Link>
         </div>
       </div>
-      <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-32 gap-12">
+      <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-20 gap-12">
         <ServiceCard
           title="Guaranteed Orders"
           description="We connect you to consistent delivery requests daily — no more idle time, just steady earnings."

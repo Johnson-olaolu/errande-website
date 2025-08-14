@@ -17,21 +17,13 @@ const Services = () => {
         <div className=" mt-7 lg:mt-16 flex items-center justify-center gap-5">
           <Link
             href=""
-            className=" capitalize flex items-center py-2 lg:py-4 px-3 lg:px-8 rounded-full border border-erande-black text-erande-black font-futura-pt text-lg mr-4 gap-2.5 hover:bg-erande-black hover:text-white transition-colors duration-300 fontm"
+            className=" capitalize flex items-center py-2 lg:py-4 px-3 lg:px-14 rounded-full border border-erande-black text-erande-black font-futura-pt text-lg mr-4 gap-2.5 hover:bg-erande-black hover:text-white transition-colors duration-300 fontm"
           >
-            <BiLogoPlayStore size={24} />
-            <span className="hidden lg:inline">Download on Google Play</span>
-          </Link>
-          <Link
-            href=""
-            className=" capitalize flex items-center py-2 lg:py-4 px-3 lg:px-8 rounded-full border border-erande-black text-erande-black font-futura-pt text-lg mr-4 gap-2.5 hover:bg-erande-black hover:text-white transition-colors duration-300 fontm"
-          >
-            <BiLogoApple size={24} />
-            <span className="hidden lg:inline">Download on Apple Store</span>
+            <span className="hidden lg:inline">to become a vendor Sign Up now</span>
           </Link>
         </div>
       </div>
-      <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-32 gap-12">
+      <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-20 gap-12">
         <ServiceCard
           title="Real-Time Tracking"
           description="Track every delivery from your store to your customer — full transparency, zero guesswork."

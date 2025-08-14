@@ -83,7 +83,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
           </div>
         </div>
       </div>
-      <div className=" flex items-center justify-center mt-16 gap-3">
+      <div className=" flex items-center justify-center mt-8 gap-3">
         <div className="px-5 lg:px-8 py-3 lg:py-5 bg-erande-red rounded-full text-white font-antipasto-pro text-base lg:text-2xl">Runner</div>
         <button onClick={() => nextSection()} className="p-3 lg:p-5 border-2 border-erande-red rounded-full cursor-pointer ">
           <FaChevronRight size={16} className=" text-erande-red" />

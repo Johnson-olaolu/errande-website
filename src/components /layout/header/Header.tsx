@@ -56,11 +56,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <a href="/" className="">
             <Image
-              src={variant === "white" ? "/images/Logo-white.png" : variant === "blue" ? "/icons/logo-blue.svg" : "/images/Logo-red.png"}
+              src={variant === "white" ? "/icons/Logo-white.svg" : variant === "blue" ? "/icons/logo-blue.svg" : "/icons/Logo-red.svg"}
               alt="Logo"
               width={122}
               height={27}
-              className="h-8 w-auto"
+              className="h-7 w-auto"
             />
           </a>
           <div className="flex items-center gap-16">

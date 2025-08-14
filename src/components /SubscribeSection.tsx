@@ -2,8 +2,8 @@ import React from "react";
 
 const SubscribeSection = () => {
   return (
-    <section className="py-24 px-8 lg:px-44 bg-[#F4F4F4]">
-      <div className=" flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-0">
+    <section className="py-8 lg:py-24 px-8 lg:px-44 bg-[#F4F4F4]">
+      <div className=" flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0">
         <div className=" max-w-[460px] text-erande-black">
           <h6 className="text-2xl lg:text-3xl font-antipasto-pro">Subcribe to our Newsletter</h6>
           <p className=" font-futura-pt text-xs lg:text-xl mt-3 pr-20 lg:pr-0 leading-4 lg:leading-8">

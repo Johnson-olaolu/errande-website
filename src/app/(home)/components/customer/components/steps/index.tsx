@@ -52,7 +52,7 @@ const Steps = () => {
   }, []);
 
   return (
-    <section className=" -mt-[200px]">
+    <section className=" -mt-[280px]">
       <div className="px-8 lg:px-28">
         <div className="w-full relative overflow-hidden transform translate-y-1/2 ">
           <motion.div
@@ -104,7 +104,7 @@ const Steps = () => {
         </div>
       </div>
 
-      <div className="h-[530px] bg-erande-blue"></div>
+      <div className=" h-[340px] lg:h-[460px] bg-erande-blue"></div>
     </section>
   );
 };

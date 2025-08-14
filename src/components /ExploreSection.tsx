@@ -53,7 +53,7 @@ const ExploreSection = (props: ExploreSectionProps) => {
   }, [currentSection, controls]);
 
   return (
-    <div className="px-8 lg:px-28 pb-24">
+    <div className="px-8 lg:px-28 pb-8 lg:pb-24">
       <div className={" " + (variant === "blue" ? "text-erande-blue" : variant === "red" ? "text-erande-red" : "text-erande-black")}>
         <h5 className={"font-antipasto-pro text-3xl lg:text-4xl mb-2 font-bold capitalize"}>Explore Erande</h5>
         <p className="font-futura-pt text-sm lg:text-xl">

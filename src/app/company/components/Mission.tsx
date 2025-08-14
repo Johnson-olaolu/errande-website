@@ -24,15 +24,15 @@ const Mission = () => {
     },
   ];
   return (
-    <section className=" bg-white pt-20 lg:py-40 lg:pl-24">
-      <div className=" flex w-full items-center gap-20 lg:gap-28 flex-col lg:flex-row">
+    <section className=" bg-white pt-10 lg:pt-20 lg:py-40 lg:pl-24">
+      <div className=" flex w-full items-center gap-10 lg:gap-28 flex-col lg:flex-row">
         <div className="text-erande-blue w-full lg:max-w-[378px] px-8 lg:px-0 shrink-0">
           <h2 className="text-3xl lg:text-5xl font-antipasto-pro capitalize">Our Mission</h2>
           <p className=" mt-2 text-erande-tetiary text-xs lg:text-xl font-futura-pt">
             To empower people to live better by making everyday life easier, more efficient, and more peaceful.
           </p>
         </div>
-        <div className=" grow bg-[#E0E0E0] px-8 py-28 lg:p-28 lg:rounded-l-[40px] grid  lg:grid-cols-2 gap-16">
+        <div className=" grow bg-[#E0E0E0] px-8 py-16 lg:py-28 lg:p-28 lg:rounded-l-[40px] grid  lg:grid-cols-2 gap-16">
           {missionInfoItems.map((item) => (
             <div className="" key={item.id}>
               <div className="">

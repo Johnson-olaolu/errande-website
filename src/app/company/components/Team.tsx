@@ -39,14 +39,14 @@ const Team = () => {
     },
   ];
   return (
-    <section className="px-5 lg:px-24 py-20 lg:py-48 bg-white">
+    <section className="px-5 lg:px-24 py-16 lg:py-20 bg-white">
       <div className="text-erande-blue w-full ">
         <h2 className=" text-3xl lg:text-4xl font-antipasto-pro capitalize ">Meet the Team</h2>
         <p className=" mt-2 text-xs lg:text-xl font-futura-pt">
           The Erande founding team brings together expertise in technology, logistics, finance, and user experience:
         </p>
       </div>
-      <div className="mt-14 lg:mt-20 grid lg:grid-cols-3 gap-10">
+      <div className="mt-8 lg:mt-12 grid lg:grid-cols-3 gap-10">
         {teamMembersInfo.map((member, index) => (
           <TeamMemberCard key={index} {...member} />
         ))}

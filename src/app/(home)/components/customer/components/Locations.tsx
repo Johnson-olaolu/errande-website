@@ -6,7 +6,7 @@ const Locations = () => {
   const locationItems = [{ name: "Lagos (Surulere)" }, { name: "Lagos (Yaba)" }];
   return (
     <section className="pb-56 lg:pb-96">
-      <div className="bg-erande-blue mt-20 lg:mt-60 pt-40 px-8 lg:px-28 pb-[332px] lg:pb-[500px] relative">
+      <div className="bg-erande-blue mt-5 lg:mt-20 pt-10 lg:pt-32 px-8 lg:px-28 pb-[260px] lg:pb-[480px] relative">
         <div className="">
           <div className=" text-left text-white max-w-[900px] w-full">
             <h2 className=" font-antipasto-pro text-xl lg:text-5xl mb-2 font-bold capitalize">Rest assured, we&apos;ve got you</h2>
@@ -15,7 +15,7 @@ const Locations = () => {
               the services we render.
             </p>
           </div>
-          <div className="mt-20 rounded-2xl lg:rounded-3xl border border-white p-2.5 lg:p-5">
+          <div className=" mt-5 lg:mt-20 rounded-2xl lg:rounded-3xl border border-white p-2.5 lg:p-5">
             <ul className=" space-y-4 lg:space-y-7">
               {locationItems.map((location, index) => (
                 <li key={index} className=" p-4 lg:p-7 rounded-2xl border border-white flex items-center justify-between gap-4">

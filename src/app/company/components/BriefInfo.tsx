@@ -5,7 +5,7 @@ const BriefInfo = () => {
   return (
     <section className=" px-5 lg:px-24 py-14 lg:py-36 bg-white">
       <div className=" flex flex-col lg:flex-row items-center justify-between gap-10">
-        <div className="text-erande-blue w-full max-w-[694px] text-center lg:text-left">
+        <div className="text-erande-blue w-full max-w-[694px] text-justify">
           <h2 className=" text-2xl lg:text-4xl font-antipasto-pro capitalize">
             Simplifying Life Through <br />
             Technology!

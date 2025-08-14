@@ -45,7 +45,7 @@ const Benefits = () => {
     function nextComponent() {
       setCurrentBenefits((prev) => (prev + 1) % benefitItems.length);
     }
-    const interval = setInterval(nextComponent, 4000);
+    const interval = setInterval(nextComponent, 400000);
     return () => clearInterval(interval);
   }, []);
 
@@ -57,13 +57,16 @@ const Benefits = () => {
       <div ref={containerRef} className=" w-full overflow-hidden">
         <motion.div className="flex w-full" initial={{ x: 0 }} animate={controls}>
           {benefitItems.map((item, index) => (
-            <div key={index} className=" flex flex-col-reverse lg:flex-row justify-between items-center py-32 lg:py-52 relative z-10 shrink-0 w-full">
+            <div
+              key={index}
+              className=" flex flex-col-reverse lg:flex-row justify-between items-center py-10 lg:py-32 relative z-10 shrink-0 w-full p-1"
+            >
               <div className=" mt-32 lg:mt-0">
-                <div className=" text-left mb-5 lg:mb-12 lg:w-[432px] w-full">
+                <div className=" mb-5 lg:mb-12 lg:w-[432px] w-full text-center lg:text-left">
                   <h6 className="capitalize font-antipasto-pro text-2xl lg:text-4xl text-erande-black font-bold">{item.title}</h6>
                   <p className=" text-erande-black text-xs lg:text-xl font-antipasto-pro capitalize">{item.text}</p>
                 </div>
-                <div className=" flex items-center  gap-3">
+                <div className=" flex items-center  gap-3 justify-center lg:justify-start">
                   <Link
                     href=""
                     className=" capitalize flex items-center text-sm py-1 lg:py-2 px-3 lg:px-5 rounded-full border-erande-black border-2 text-erande-black font-futura-pt lg:text-lg  hover:bg-erande-black hover:text-white transition-colors duration-300"
@@ -77,7 +80,7 @@ const Benefits = () => {
                     <BiLogoApple />
                   </Link>
                 </div>
-                <div className="flex items-center gap-3 mt-20">
+                <div className="flex items-center gap-3 mt-8 lg:mt-20 justify-center lg:justify-start">
                   {benefitItems.map((_, i) => (
                     <button
                       key={i}
@@ -95,19 +98,13 @@ const Benefits = () => {
         </motion.div>
       </div>
 
+      <Image src="/icons/star-line.svg" alt="Star line" height={42} width={1080} className="absolute lg:bottom-20  -right-20 lg:right-8 h-11" />
       <Image
         src="/icons/star-line.svg"
         alt="Star line"
         height={42}
         width={1080}
-        className="absolute bottom-20 lg:bottom-32 -right-20 lg:right-8 h-11"
-      />
-      <Image
-        src="/icons/star-line.svg"
-        alt="Star line"
-        height={42}
-        width={1080}
-        className="absolute top-20 lg:top-32 -left-56 transform -scale-x-100 h-11"
+        className="absolute top-0 lg:top-20 -left-56 transform -scale-x-100 h-11"
       />
       {/* <div className=" px-8 lg:px-52 ">
         <div className="h-px bg-erande-black w-full"></div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Focus = () => {
   return (
-    <section className=" py-56 lg:py-96 bg-erande-red px-14 lg:px-24">
+    <section className=" py-20 lg:py-60 bg-erande-red px-14 lg:px-24">
       <div className="text-white w-full max-w-[1020px] mx-auto text-center">
         <h4 className="text-3xl lg:text-5xl font-antipasto-pro font-bold capitalize">What Matters Most?</h4>
         <p className=" font-futura-pt text-xs lg:text-xl mt-4 lg:mt-10">

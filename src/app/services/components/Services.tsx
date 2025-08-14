@@ -103,7 +103,7 @@ const Services = () => {
         )}
       </div>
       <div className=" px-5 lg:px-28">
-        <p className=" font-antipasto-pro text-[#666666] text-3xl">
+        <p className=" font-antipasto-pro text-[#666666] text-lg lg:text-3xl text-justify">
           Each service is backed by trusted, vetted partners and supported by real-time tracking technology, ensuring reliability, safety, and
           convenience every step of the way.
         </p>
