@@ -17,9 +17,9 @@ const Benefits = () => {
           <div className=" flex items-center  gap-3">
             <Link
               href=""
-              className=" w-full  capitalize flex items-center justify-center text-sm py-1 lg:py-2 px-3 lg:px-5 rounded-full border-erande-black border-2 text-erande-black font-futura-pt lg:text-lg  hover:bg-erande-black hover:text-white transition-colors duration-300"
+              className=" w-full capitalize flex items-center justify-center text-sm py-1 lg:py-2 px-3 lg:px-5 rounded-full border-erande-black border-2 text-erande-black font-futura-pt lg:text-lg  hover:bg-erande-black hover:text-white transition-colors duration-300"
             >
-              to become a vendor Sign Up now
+              To become a vendor Sign Up now
             </Link>
           </div>
         </div>

@@ -15,11 +15,17 @@ const Services = () => {
           </p>
         </div>
         <div className=" mt-7 lg:mt-16 flex items-center justify-center gap-5">
+          {/* <Link
+            href=""
+            className=" capitalize flex items-center py-2 lg:py-4 px-3 lg:px-14 rounded-full border border-erande-black text-erande-black font-futura-pt text-lg mr-4 gap-2.5 hover:bg-erande-black hover:text-white transition-colors duration-300 "
+          >
+            To become a vendor Sign Up now
+          </Link> */}
           <Link
             href=""
-            className=" capitalize flex items-center py-2 lg:py-4 px-3 lg:px-14 rounded-full border border-erande-black text-erande-black font-futura-pt text-lg mr-4 gap-2.5 hover:bg-erande-black hover:text-white transition-colors duration-300 fontm"
+            className=" w-full lg:w-auto capitalize flex items-center justify-center text-sm py-1 lg:py-2 px-3 lg:px-5 rounded-full border-erande-black border-2 text-erande-black font-futura-pt lg:text-lg  hover:bg-erande-black hover:text-white transition-colors duration-300"
           >
-            <span className="hidden lg:inline">to become a vendor Sign Up now</span>
+            To become a vendor Sign Up now
           </Link>
         </div>
       </div>

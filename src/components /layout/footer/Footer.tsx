@@ -10,14 +10,11 @@ const Footer = () => {
           <Image height={33} width={137} src={"/images/Logo-red.png"} alt="Logo" className="mb-8" />
           <ul className="flex flex-col space-y-2 mb-8">
             <li>
-              <p className=" text-[#CCCCCC] font-futura-pt text-xs">A108 Adam Street New York, NY 535022 United States</p>
-            </li>
-            <li>
-              <p className=" text-[#CCCCCC] font-futura-pt text-xs">Phone: +1 5589 55488 55</p>
+              <p className=" text-[#CCCCCC] font-futura-pt text-xs">13 Anthony Udoh Avenue Ajao Estate Lagos</p>
             </li>
             <li>
               <p className=" text-[#CCCCCC] font-futura-pt text-xs">
-                Email: <a href="mailto:info@erande.com">info@erande.com</a>
+                Email: <a href="mailto:>info@useerande.com">info@useerande.com</a>
               </p>
             </li>
           </ul>

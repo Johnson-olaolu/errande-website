@@ -61,7 +61,7 @@ const Benefits = () => {
               key={index}
               className=" flex flex-col-reverse lg:flex-row justify-between items-center py-10 lg:py-32 relative z-10 shrink-0 w-full p-1"
             >
-              <div className=" mt-32 lg:mt-0">
+              <div className=" mt-10 lg:mt-0">
                 <div className=" mb-5 lg:mb-12 lg:w-[432px] w-full text-center lg:text-left">
                   <h6 className="capitalize font-antipasto-pro text-2xl lg:text-4xl text-erande-black font-bold">{item.title}</h6>
                   <p className=" text-erande-black text-xs lg:text-xl font-antipasto-pro capitalize">{item.text}</p>
