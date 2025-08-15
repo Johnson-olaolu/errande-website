@@ -14,7 +14,7 @@ const Services = () => {
             services we render.
           </p>
         </div>
-        <div className=" mt-7 lg:mt-16 flex items-center justify-center gap-5">
+        <div className=" mt-7 lg:mt-16 flex items-center justify-center lg:gap-5">
           <Link
             href=""
             className=" capitalize flex items-center py-2 lg:py-4 px-3 lg:px-8 rounded-full border border-erande-blue text-erande-blue font-futura-pt text-lg mr-4 gap-2.5 hover:bg-erande-blue hover:text-white transition-colors duration-300 fontm"

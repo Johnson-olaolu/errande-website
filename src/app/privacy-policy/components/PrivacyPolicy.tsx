@@ -7,9 +7,9 @@ const PrivacyPolicy = () => {
         <h2 className=" text-3xl lg:text-[80px] font-antipasto-pro capitalize">Privacy Policy</h2>
         <p className=" text-erande-tetiary text-xs lg:text-xl font-futura-pt">Last Updated: March 15, 2023</p>
       </div>
-      <div className="mt-24 flex items-start gap-24 mb-60">
+      <div className=" mt-12 lg:mt-24 flex items-start gap-24 text-justify">
         <div className=" grow">
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Introduction</h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               Welcome to Erande, where we understand that your time is one of your most valuable assets. In today&apos;s fast-paced world, juggling
@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
               errands are in good hands, allowing you to reclaim your time and live life to the fullest.
             </p>
           </div>
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Information We Collect</h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
@@ -47,11 +47,10 @@ const PrivacyPolicy = () => {
               <br />
               By using our services, you agree to our privacy policy, which may be updated from time to time. We encourage you to review it
               periodically to stay informed about how we are protecting your information. At Erande, we are dedicated to providing you with a safe and
-              enjoyable experience, allowing you to focus on what matters most. <br />
-              <br />
+              enjoyable experience, allowing you to focus on what matters most.
             </p>
           </div>
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">How We Use Your Information</h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, your privacy is our top priority. We are dedicated to protecting your personal information and being transparent about our
@@ -70,11 +69,10 @@ const PrivacyPolicy = () => {
               <br />
               By utilizing our services, you consent to our privacy policy, which may be revised periodically. We encourage you to check it regularly
               to stay updated on how we are safeguarding your information. At Erande, we are committed to providing you with a secure and enjoyable
-              experience, allowing you to concentrate on what truly matters. <br />
-              <br />
+              experience, allowing you to concentrate on what truly matters.
             </p>
           </div>
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Sharing Your Information</h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we believe in being open about how we handle your personal information. When you use our services, we may collect certain
@@ -100,12 +98,9 @@ const PrivacyPolicy = () => {
               As part of our commitment to transparency, we encourage you to review our privacy policy regularly. It outlines how we collect, use, and
               protect your information, and it may be updated from time to time. By staying informed, you can understand how we are working to keep
               your data safe and ensure a positive experience with Erande.
-              <br />
-              <br />
-              <br />
             </p>
           </div>
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Data Security</h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
@@ -126,7 +121,7 @@ const PrivacyPolicy = () => {
               enjoyable experience, allowing you to focus on what matters most.
             </p>
           </div>
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Your rights</h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
@@ -150,7 +145,7 @@ const PrivacyPolicy = () => {
               enjoyable experience, allowing you to focus on what matters most.
             </p>
           </div>
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Cookies and tracking technology. </h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
@@ -171,7 +166,7 @@ const PrivacyPolicy = () => {
               enjoyable experience, allowing you to focus on what matters most.
             </p>
           </div>
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Third-Party Links. </h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
@@ -195,7 +190,7 @@ const PrivacyPolicy = () => {
               enjoyable experience, allowing you to focus on what matters most.
             </p>
           </div>
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Changes to privacy policy</h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
@@ -213,11 +208,10 @@ const PrivacyPolicy = () => {
               <br />
               By using our services, you agree to our privacy policy, which may be updated from time to time. We encourage you to review it
               periodically to stay informed about how we are protecting your information. At Erande, we are dedicated to providing you with a safe and
-              enjoyable experience, allowing you to focus on what matters most. <br />
-              <br />
+              enjoyable experience, allowing you to focus on what matters most.
             </p>
           </div>
-          <div className=" mb-16">
+          <div className="mb-12 lg:mb-16">
             <h6 className=" text-2xl lg:text-4xl font-antipasto-pro text-erande-blue">Contact Us</h6>
             <p className=" mt-5 lg:mt-7  lg:text-lg font-futura-pt text-erande-tetiary">
               At Erande, we prioritize your privacy and are committed to safeguarding your personal information. We understand that in a world where
@@ -331,9 +325,6 @@ const PrivacyPolicy = () => {
             </ul>
           </div>
         </div>
-      </div>
-      <div className=" px-8 lg:px-52 ">
-        <div className="h-px bg-erande-black w-full"></div>
       </div>
     </section>
   );

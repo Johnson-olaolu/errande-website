@@ -45,7 +45,7 @@ const Benefits = () => {
     function nextComponent() {
       setCurrentBenefits((prev) => (prev + 1) % benefitItems.length);
     }
-    const interval = setInterval(nextComponent, 400000);
+    const interval = setInterval(nextComponent, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -54,7 +54,7 @@ const Benefits = () => {
       {/* <div className=" px-8 lg:px-52 ">
         <div className="h-px bg-erande-black w-full"></div>
       </div> */}
-      <div ref={containerRef} className=" w-full overflow-hidden">
+      <div ref={containerRef} className=" w-full overflow-hidden relative">
         <motion.div className="flex w-full" initial={{ x: 0 }} animate={controls}>
           {benefitItems.map((item, index) => (
             <div
@@ -80,22 +80,20 @@ const Benefits = () => {
                     <BiLogoApple />
                   </Link>
                 </div>
-                <div className="flex items-center gap-3 mt-8 lg:mt-20 justify-center lg:justify-start">
-                  {benefitItems.map((_, i) => (
-                    <button
-                      key={i}
-                      className={`w-12 lg:w-16 h-1.5 lg:h-2.5 rounded-full cursor-pointer ${
-                        i === currentBenefits ? "bg-erande-black" : "bg-gray-300"
-                      }`}
-                      onClick={() => setCurrentBenefits(i)}
-                    ></button>
-                  ))}
-                </div>
               </div>
               <Image src={item.image} alt="Vendor Benefit" height={498} width={702} className="w-full lg:w-[702px]" />
             </div>
           ))}
         </motion.div>
+        <div className="flex items-center gap-3  justify-center lg:justify-start lg:absolute left-0 bottom-80">
+          {benefitItems.map((_, i) => (
+            <button
+              key={i}
+              className={`w-12 lg:w-16 h-1.5 lg:h-2.5 rounded-full cursor-pointer ${i === currentBenefits ? "bg-erande-black" : "bg-gray-300"}`}
+              onClick={() => setCurrentBenefits(i)}
+            ></button>
+          ))}
+        </div>
       </div>
 
       <Image src="/icons/star-line.svg" alt="Star line" height={42} width={1080} className="absolute lg:bottom-20  -right-20 lg:right-8 h-11" />

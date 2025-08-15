@@ -23,7 +23,7 @@ const Services = () => {
           </Link> */}
           <Link
             href=""
-            className=" w-full lg:w-auto capitalize flex items-center justify-center text-sm py-1 lg:py-2 px-3 lg:px-5 rounded-full border-erande-black border-2 text-erande-black font-futura-pt lg:text-lg  hover:bg-erande-black hover:text-white transition-colors duration-300"
+            className=" w-auto capitalize flex items-center justify-center text-sm py-2 px-8 rounded-full border-erande-black border-2 text-erande-black font-futura-pt lg:text-lg  hover:bg-erande-black hover:text-white transition-colors duration-300"
           >
             To become a vendor Sign Up now
           </Link>
