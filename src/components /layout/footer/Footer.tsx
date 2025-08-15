@@ -14,7 +14,7 @@ const Footer = () => {
             </li>
             <li>
               <p className=" text-[#CCCCCC] font-futura-pt text-xs">
-                Email: <a href="mailto:>info@useerande.com">info@useerande.com</a>
+                <a href="mailto:>info@useerande.com">info@useerande.com</a>
               </p>
             </li>
           </ul>
