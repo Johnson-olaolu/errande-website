@@ -6,7 +6,7 @@ const Building = () => {
     <section className=" bg-erande-blue px-5 lg:px-24 pt-12 lg:pt-40 pb-28 lg:pb-52">
       <div className="text-white w-full ">
         <h2 className=" text-3xl lg:text-4xl font-antipasto-pro capitalize font-bold">What We’re Building</h2>
-        <p className=" mt-4 lg:mt-11  text-sm lg:text-xl font-futura-pt text-justify">
+        <p className=" mt-4 lg:mt-11  text-sm lg:text-xl font-futura-pt text-justify ">
           Erande is a comprehensive, one-stop-shop errand services marketplace built specifically for the Nigerian lifestyle. We merge technology with
           empathy to deliver personalized, real time support for everyday needs. Through partnerships with local vendors, runners, and logistics
           providers, we connect users to a curated network of trusted service providers, all in one app.
