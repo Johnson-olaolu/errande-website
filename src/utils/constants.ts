@@ -366,7 +366,7 @@ export const faqQuestionAnswersVendor = [
     id: 4,
     question: "How can I become a vendor?",
     answer: "To become a Vendor:",
-    steps: [
+    items: [
       "Go to the Erande Vendor page on our website and click “To become a Vendor, Sign Up.",
       "You’ll be redirected to the sign-up form — fill in the required details and upload the necessary documents.",
       "Submit your application and wait for our Quality Assurance (QA) team to contact you.",
