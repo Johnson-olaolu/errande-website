@@ -102,3 +102,7 @@ body {
 /* .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 } */
+
+body {
+  cursor: url("/images/cursor.png"), auto;
+}
