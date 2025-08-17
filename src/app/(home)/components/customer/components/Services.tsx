@@ -8,10 +8,11 @@ const Services = () => {
     <section className="py-8 px-8 lg:px-28 ">
       <div className="">
         <div className=" text-center text-erande-blue max-w-[900px] mx-auto w-full">
-          <h2 className=" font-antipasto-pro text-xl lg:text-4xl mb-2 font-bold capitalize">Rest assured, we&apos;ve got you</h2>
+          <h2 className=" font-antipasto-pro text-xl lg:text-4xl mb-2 font-bold capitalize">Captain, the city is your ocean — we’re your fleet.</h2>
           <p className=" font-futura-pt text-sm lg:text-xl">
-            Erande gives you the most efficient service that no one has ever seen. We have compiled information and analysis that helps us better the
-            services we render.
+            Erande will run every errand you command with lightning speed.
+            <br />
+            Download the Erande app from
           </p>
         </div>
         <div className=" mt-7 lg:mt-16 flex items-center justify-center lg:gap-5">
@@ -31,7 +32,7 @@ const Services = () => {
           </Link>
         </div>
       </div>
-      <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-20 gap-12 justify-self-center">
+      <div className=" grid grid-cols-1 lg:grid-cols-3 mt-12 lg:mt-20 gap-12 justify-items-center">
         <ServiceCard
           title="send errands "
           description="Clean, shop, and wash your clothes from the comfort of your home."

@@ -40,7 +40,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
             <Image
               src="/images/rider.png"
               alt="rider"
-              className=" absolute -top-12 lg:-top-8 left-1/2 transform -translate-x-1/2 h-[380px] lg:h-[554px]  w-auto"
+              className=" absolute -top-12 lg:-top-10 left-1/2 transform -translate-x-1/2 h-[380px] lg:h-[554px]  w-auto"
               height={554}
               width={562}
             />
