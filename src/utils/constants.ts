@@ -364,10 +364,16 @@ export const faqQuestionAnswersVendor = [
   },
   {
     id: 4,
-    question: "How do I register as a vendor on Erande?",
-    answer:
-      "You can register via the Erande Vendor App or our website. Once you complete the form, our team will reach out to verify your business and complete your onboarding.",
+    question: "How can I become a vendor?",
+    answer: "To become a Vendor:",
+    steps: [
+      "Go to the Erande Vendor page on our website and click “To become a Vendor, Sign Up.",
+      "You’ll be redirected to the sign-up form — fill in the required details and upload the necessary documents.",
+      "Submit your application and wait for our Quality Assurance (QA) team to contact you.",
+      "While waiting, scroll to the footer of the Erande website, download the Vendor SLA, sign it, and email it to vendor@useerande.com",
+    ],
   },
+
   {
     id: 5,
     question: "What documents do I need to provide?",
