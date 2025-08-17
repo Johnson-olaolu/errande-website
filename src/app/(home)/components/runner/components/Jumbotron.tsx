@@ -14,7 +14,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
       <div className=" pb-[200px] overflow-x-hidden">
         <div className="bg-erande-red pt-28 lg:pt-52 px-5 lg:px-24 h-[594px] lg:h-[800px] relative z-0">
           <div className="z-[1]">
-            <div className=" flex items-center justify-center gap-2.5 lg:gap-5 mb-9 lg:mb-3">
+            <div className=" flex items-center justify-center gap-2.5 lg:gap-5 mb-9 lg:mb-3 lg:transform lg:translate-y-[-50px]">
               <a href="" className="">
                 <Image className="h-8 lg:h-14 w-11 lg:w-20" src="/icons/play-store.svg" alt="Play Store" width={80} height={52} />
               </a>
@@ -40,7 +40,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
             <Image
               src="/images/rider.png"
               alt="rider"
-              className=" absolute -top-12 lg:-top-12 left-1/2 transform -translate-x-1/2 h-[380px] lg:h-[554px]  w-auto"
+              className=" absolute -top-12 lg:-top-24 left-1/2 transform -translate-x-1/2 h-[380px] lg:h-[554px]  w-auto"
               height={554}
               width={562}
             />

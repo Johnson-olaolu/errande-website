@@ -9,11 +9,8 @@ const Locations = () => {
       <div className="bg-erande-blue mt-5 lg:mt-20 pt-10 lg:pt-32 px-8 lg:px-28 pb-[260px] lg:pb-[480px] relative">
         <div className="">
           <div className=" text-left text-white max-w-[900px] w-full">
-            <h2 className=" font-antipasto-pro text-xl lg:text-5xl mb-2 font-bold capitalize">Rest assured, we&apos;ve got you</h2>
-            <p className=" font-futura-pt text-sm lg:text-xl">
-              Erande gives you the most efficient service that no one has ever seen. We have compiled information and analysis that helps us better
-              the services we render.
-            </p>
+            <h2 className=" font-antipasto-pro text-xl lg:text-5xl mb-2 font-bold capitalize">We’re Here, We’re Growing Fast!</h2>
+            <p className=" font-futura-pt text-sm lg:text-xl">Erande is live in these locations today. More cities loading…! Yours could be next.</p>
           </div>
           <div className=" mt-5 lg:mt-20 rounded-2xl lg:rounded-3xl border border-white p-2.5 lg:p-5">
             <ul className=" space-y-4 lg:space-y-7">

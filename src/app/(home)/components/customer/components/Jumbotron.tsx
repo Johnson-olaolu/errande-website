@@ -11,9 +11,9 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
   return (
     <div className="">
       <div className=" pb-[200px] overflow-x-hidden">
-        <div className="bg-erande-blue pt-28 lg:pt-52 px-5 lg:px-24 h-[594px] lg:h-[800px] relative z-0">
-          <div className="z-[1]">
-            <div className=" flex items-center justify-center gap-2.5 lg:gap-5 mb-9 lg:mb-3">
+        <div className="bg-erande-blue pt-28 lg:pt-52 px-5 lg:px-24 h-[620px] lg:h-[820px] relative z-0">
+          <div className="z-[1] ">
+            <div className=" flex items-center justify-center gap-2.5 lg:gap-5 mb-9 lg:mb-3 lg:transform lg:translate-y-[-50px]">
               <a href="" className="">
                 <Image className="h-8 lg:h-14 w-11 lg:w-20" src="/icons/play-store.svg" alt="Play Store" width={80} height={52} />
               </a>
@@ -39,7 +39,7 @@ const Jumbotron: React.FC<JumbotronProps> = ({ nextSection }) => {
             <Image
               src="/images/cleaner.png"
               alt="cleaner"
-              className=" absolute -top-3 left-1/2 transform -translate-x-1/2 h-[340px] lg:h-[534px] "
+              className=" absolute -top-10 lg:-top-20 left-1/2 transform -translate-x-1/2 h-[340px] lg:h-[534px] "
               height={534}
               width={731}
             />

@@ -12,7 +12,7 @@ const Services = () => {
           <p className=" font-futura-pt text-sm lg:text-xl">
             Erande will run every errand you command with lightning speed.
             <br />
-            Download the Erande app from
+            Get the Erande app from
           </p>
         </div>
         <div className=" mt-7 lg:mt-16 flex items-center justify-center lg:gap-5">

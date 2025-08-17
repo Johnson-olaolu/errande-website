@@ -9,7 +9,10 @@ const Services = () => {
       <div className="">
         <div className=" text-center text-erande-red max-w-[900px] mx-auto w-full">
           <h2 className=" font-antipasto-pro text-xl lg:text-4xl mb-2 font-bold capitalize">From street to street, the money moves with you</h2>
-          <p className=" font-futura-pt text-sm lg:text-xl">Become an Erande Runner: App available on Google Play & Apple Store.</p>
+          <p className=" font-futura-pt text-sm lg:text-xl">
+            Become an Erande Runner:
+            <br /> App available on
+          </p>
         </div>
         <div className=" mt-7 lg:mt-16 flex items-center justify-center lg:gap-5">
           <Link
